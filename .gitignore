@@ -1,5 +1,6 @@
 #Xilinx ISE gitignore
 _ngo
+iseconfig
 *.xmsgs
 *.log
 isim
@@ -29,6 +30,7 @@ xst
 *.html
 *.schlog
 *.log
+sch2HdlBatchFile
 *.cmd
 
 #other junk
