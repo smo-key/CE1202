@@ -30,6 +30,7 @@ xst
 *.schlog
 *.log
 sch2HdlBatchFile
+*.cmd
 
 #other junk
 *.swp

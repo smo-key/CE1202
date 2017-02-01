@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/arthur/git/ce1202/mux_2to1_vtest_isim_beh.exe" -prj "/home/arthur/git/ce1202/mux_2to1_vtest_beh.prj" "work.mux_2to1_vtest" "work.glbl" 
