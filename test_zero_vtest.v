@@ -2,7 +2,7 @@
 
 `timescale 1ns / 1ps
 
-module test_zero_test_zero_sch_tb();
+module test_zero_vtest();
 
 // Inputs
 	reg [7:0] zero_in = 8'b00000000;
