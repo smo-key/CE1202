@@ -22,9 +22,75 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="ToyProcessor.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="mux_2to1.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="mux_2to1.vf"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="mux_2to1_vtest.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="mux_2to1_vtest.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mux_2to1_vtest.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="mux_2to1_vtest.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="mux_2to1_vtest.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="mux_2to1_vtest_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mux_2to1_vtest_translate.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="mux_2to1_vtest_xst.xrpt"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="test_zero_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1485968168" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1485968168">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1485968169" xil_pn:in_ck="5634219409753109335" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-4188445293596827859" xil_pn:start_ts="1485968168">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="mux_2to1.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1485968169" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="301130168704193270" xil_pn:start_ts="1485968169">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1485968169" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1485968169">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1485968169" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="1948799653367471723" xil_pn:start_ts="1485968169">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1485968169" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="2988080280822507185" xil_pn:start_ts="1485968169">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1485968169" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-2214309744184750208" xil_pn:start_ts="1485968169">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1485968176" xil_pn:in_ck="-4521635299142788063" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-330572495047481111" xil_pn:start_ts="1485968169">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="mux_2to1_vtest.lso"/>
+      <outfile xil_pn:name="mux_2to1_vtest.prj"/>
+      <outfile xil_pn:name="mux_2to1_vtest.syr"/>
+      <outfile xil_pn:name="mux_2to1_vtest.xst"/>
+      <outfile xil_pn:name="mux_2to1_vtest_translate.prj"/>
+      <outfile xil_pn:name="mux_2to1_vtest_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1485968176" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="3348075725778882710" xil_pn:start_ts="1485968176">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+  </transforms>
 
 </generated_project>

@@ -29,6 +29,7 @@ xst
 *.html
 *.schlog
 *.log
+sch2HdlBatchFile
 
 #other junk
 *.swp
