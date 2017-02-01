@@ -32,8 +32,10 @@ xst
 *.html
 *.schlog
 *.log
-sch2HdlBatchFile
+#sch2HdlBatchFile
 *.cmd
+*.schbak
+*.schcmd
 
 #other junk
 *.swp
