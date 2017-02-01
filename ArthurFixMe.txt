@@ -1,0 +1,11 @@
+*.cmd
+*.nlf
+*netgen
+*_translate.v
+*.jhd
+*.lso
+*.prj
+*.syr
+*.vf
+*.xst
+*.html
