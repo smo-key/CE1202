@@ -1,0 +1,35 @@
+#Xilinx ISE gitignore
+_ngo
+*.xmsgs
+*.log
+isim
+isim.cmd
+netgen
+*_translate.*
+*.bld
+*.cmd_log
+*.lso
+*.ngc
+*.ngd
+*.ngr
+*.prj
+*.stx
+*.syr
+*.vf
+*.xst
+*.xrpt
+*.xreport
+*_pn.xml
+xilinxsim.ini
+*_xdb
+xst
+*.jhd
+*.wdb
+*.exe
+*.html
+*.schlog
+*.log
+*.cmd
+
+#other junk
+*.swp
