@@ -1,2 +1,0 @@
-verilog isim_temp "netgen/translate/test_zero_translate.v"
-verilog isim_temp "test_zero_vtest.v"

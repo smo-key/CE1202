@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -refsym full_adder {C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/full_adder.sch} {C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/full_adder.sym} 
