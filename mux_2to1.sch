@@ -11,11 +11,11 @@
         <signal name="in0" />
         <signal name="sel" />
         <signal name="in1" />
-        <signal name="out" />
+        <signal name="mux_out" />
         <port polarity="Input" name="in0" />
         <port polarity="Input" name="sel" />
         <port polarity="Input" name="in1" />
-        <port polarity="Output" name="out" />
+        <port polarity="Output" name="mux_out" />
         <blockdef name="and2">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-64" y2="-64" x1="0" />
@@ -56,7 +56,7 @@
         <block symbolname="or2" name="XLXI_3">
             <blockpin signalname="XLXN_2" name="I0" />
             <blockpin signalname="XLXN_1" name="I1" />
-            <blockpin signalname="out" name="O" />
+            <blockpin signalname="mux_out" name="O" />
         </block>
         <block symbolname="and2b1" name="XLXI_4">
             <blockpin signalname="sel" name="I0" />
@@ -94,9 +94,10 @@
         <iomarker fontsize="28" x="1488" y="1440" name="in1" orien="R180" />
         <iomarker fontsize="28" x="1488" y="1184" name="in0" orien="R180" />
         <iomarker fontsize="28" x="1488" y="1248" name="sel" orien="R180" />
-        <branch name="out">
-            <wire x2="2448" y1="1312" y2="1312" x1="2416" />
+        <branch name="mux_out">
+            <wire x2="2432" y1="1312" y2="1312" x1="2416" />
+            <wire x2="2448" y1="1312" y2="1312" x1="2432" />
         </branch>
-        <iomarker fontsize="28" x="2448" y="1312" name="out" orien="R0" />
+        <iomarker fontsize="28" x="2448" y="1312" name="mux_out" orien="R0" />
     </sheet>
 </drawing>

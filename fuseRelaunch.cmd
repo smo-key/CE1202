@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "simprims_ver" -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/arthur/git/ce1202/test_zero_test_zero_sch_tb_isim_translate.exe" -prj "/home/arthur/git/ce1202/test_zero_test_zero_sch_tb_translate.prj" "work.test_zero_test_zero_sch_tb" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/arthur/git/ce1202/mux_2to1_vtest_isim_beh.exe" -prj "/home/arthur/git/ce1202/mux_2to1_vtest_beh.prj" "work.mux_2to1_vtest" "work.glbl" 

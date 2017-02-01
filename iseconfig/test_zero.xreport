@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-02-01T10:15:13</DateModified>
+  <DateModified>2017-02-01T10:41:10</DateModified>
   <ModuleName>test_zero</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2017-02-01T10:38:38</SummaryTimeStamp>
   <SavedFilePath>/home/arthur/git/ce1202/iseconfig/test_zero.xreport</SavedFilePath>
   <ImplementationReportsDirectory>/home/arthur/git/ce1202/</ImplementationReportsDirectory>
   <DateInitialized>2017-01-31T21:58:12</DateInitialized>

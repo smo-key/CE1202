@@ -1,6 +1,6 @@
 // Verilog Test Fixture Template
 
-`timescale 1 ns / 1 ps
+`timescale 1ns / 1ps
 
 module mux_2to1_vtest();
 	//Inputs
@@ -12,14 +12,14 @@ module mux_2to1_vtest();
 	parameter max_count = (1<<num_inputs);
 	
 	//Output
-	wire out;
+	wire mux_out;
 	
 	//Instantiate design
 	mux_2to1 UUT(
 		.sel(sel),
 		.in0(in0),
 		.in1(in1),
-		.out(out)
+		.mux_out(mux_out)
 	);
 	
 	initial begin 

@@ -18,9 +18,17 @@ netgen
 *.vf
 *.xst
 *.xrpt
+*.xreport
 *_pn.xml
 xilinxsim.ini
 *_xdb
 xst
-*_summary.html
 *.jhd
+*.wdb
+*.exe
+*.html
+*.schlog
+*.log
+
+#other junk
+*.swp
