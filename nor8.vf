@@ -1,0 +1,40 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.6
+//  \   \         Application : sch2hdl
+//  /   /         Filename : nor8.vf
+// /___/   /\     Timestamp : 01/25/2017 16:09:56
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/nor8.vf" -w "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/nor8.sch"
+//Design Name: nor8
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module NOR8_MXILINX_nor8(zero_in, 
+                         zero_out);
+
+    input [7:0] zero_in;
+   output zero_out;
+   
+   
+   (* HU_SET = "XLXI_1_0" *) 
+   NOR8_MXILINX_nor8  XLXI_1 (.I0(zero_in[0]), 
+                             .I1(zero_in[1]), 
+                             .I2(zero_in[2]), 
+                             .I3(zero_in[3]), 
+                             .I4(zero_in[4]), 
+                             .I5(zero_in[5]), 
+                             .I6(zero_in[6]), 
+                             .I7(zero_in[7]), 
+                             .O(zero_out));
+endmodule

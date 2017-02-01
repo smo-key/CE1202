@@ -1,0 +1,24 @@
+xst -intstyle ise -filter "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/iseconfig/filter.filter" -ifn "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/test_zero.xst" -ofn "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/test_zero.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-4 "test_zero.ngc" test_zero.ngd  
+netgen -filter "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/iseconfig/filter.filter" -intstyle ise -insert_glbl true -w -dir netgen/translate -ofmt verilog -sim test_zero.ngd test_zero_translate.v 
+xst -intstyle ise -filter "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/iseconfig/filter.filter" -ifn "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/test_zero.xst" -ofn "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/test_zero.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-4 "test_zero.ngc" test_zero.ngd  
+netgen -filter "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/iseconfig/filter.filter" -intstyle ise -insert_glbl true -w -dir netgen/translate -ofmt verilog -sim test_zero.ngd test_zero_translate.v 
+xst -intstyle ise -filter "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/iseconfig/filter.filter" -ifn "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/test_zero.xst" -ofn "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/test_zero.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-4 "test_zero.ngc" test_zero.ngd  
+netgen -filter "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/iseconfig/filter.filter" -intstyle ise -insert_glbl true -w -dir netgen/translate -ofmt verilog -sim test_zero.ngd test_zero_translate.v 
+xst -intstyle ise -filter "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/iseconfig/filter.filter" -ifn "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/test_zero.xst" -ofn "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/test_zero.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-4 "test_zero.ngc" test_zero.ngd  
+netgen -filter "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/iseconfig/filter.filter" -intstyle ise -insert_glbl true -w -dir netgen/translate -ofmt verilog -sim test_zero.ngd test_zero_translate.v 
+map -filter "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/iseconfig/filter.filter" -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o test_zero_map.ncd test_zero.ngd test_zero.pcf 
+par -filter "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 test_zero_map.ncd test_zero.ncd test_zero.pcf 
+trce -filter {C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/iseconfig/filter.filter} -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml test_zero.twx test_zero.ncd -o test_zero.twr test_zero.pcf 
+xst -intstyle ise -filter "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/iseconfig/filter.filter" -ifn "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/test_zero.xst" -ofn "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/test_zero.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-4 "test_zero.ngc" test_zero.ngd  
+netgen -filter "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/iseconfig/filter.filter" -intstyle ise -insert_glbl true -w -dir netgen/translate -ofmt verilog -sim test_zero.ngd test_zero_translate.v 
+xst -intstyle ise -filter "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/iseconfig/filter.filter" -ifn "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/test_zero.xst" -ofn "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/test_zero.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-4 "test_zero.ngc" test_zero.ngd  
+netgen -filter "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/iseconfig/filter.filter" -intstyle ise -insert_glbl true -w -dir netgen/translate -ofmt verilog -sim test_zero.ngd test_zero_translate.v 
+xst -intstyle ise -filter "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/iseconfig/filter.filter" -ifn "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/test_zero.xst" -ofn "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/test_zero.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-4 "test_zero.ngc" test_zero.ngd  
+netgen -filter "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/iseconfig/filter.filter" -intstyle ise -insert_glbl true -w -dir netgen/translate -ofmt verilog -sim test_zero.ngd test_zero_translate.v 

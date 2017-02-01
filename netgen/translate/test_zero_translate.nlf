@@ -1,0 +1,20 @@
+Release 14.6 - netgen P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: netgen -filter "C:/Users/Elizabeth/Documents/CE 1202
+Lab/ToyProcessor/iseconfig/filter.filter" -intstyle ise -insert_glbl true -w
+-dir netgen/translate -ofmt verilog -sim test_zero.ngd test_zero_translate.v  
+
+Reading design 'test_zero.ngd' ...
+Flattening design ...
+Processing design ... 
+  Preping design's networks ...
+  Preping design's macros ...
+Writing Verilog netlist file 'C:\Users\Elizabeth\Documents\CE 1202
+Lab\ToyProcessor\netgen\translate\test_zero_translate.v' ...
+INFO:NetListWriters:633 - The generated Verilog netlist contains Xilinx SIMPRIM
+   simulation primitives and has to be used with SIMPRIM simulation library for
+   correct compilation and simulation. 
+Number of warnings: 0
+Number of info messages: 1
+Total memory usage is 157300 kilobytes

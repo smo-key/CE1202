@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "simprims_ver" -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/test_zero_test_zero_sch_tb_isim_translate.exe" -prj "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/test_zero_test_zero_sch_tb_translate.prj" "work.test_zero_test_zero_sch_tb" "work.glbl" 

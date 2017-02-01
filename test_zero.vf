@@ -1,0 +1,100 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.6
+//  \   \         Application : sch2hdl
+//  /   /         Filename : test_zero.vf
+// /___/   /\     Timestamp : 01/31/2017 21:54:55
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/test_zero.vf" -w "C:/Users/Elizabeth/Documents/CE 1202 Lab/ToyProcessor/test_zero.sch"
+//Design Name: test_zero
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module NOR8_MXILINX_test_zero(I0, 
+                              I1, 
+                              I2, 
+                              I3, 
+                              I4, 
+                              I5, 
+                              I6, 
+                              I7, 
+                              O);
+
+    input I0;
+    input I1;
+    input I2;
+    input I3;
+    input I4;
+    input I5;
+    input I6;
+    input I7;
+   output O;
+   
+   wire dummy;
+   wire S0;
+   wire S1;
+   wire O_DUMMY;
+   
+   assign O = O_DUMMY;
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_29 (.I1(I0), 
+                 .I2(I1), 
+                 .I3(I2), 
+                 .I4(I3), 
+                 .O(S0));
+   OR4  I_36_110 (.I0(I0), 
+                 .I1(I1), 
+                 .I2(I2), 
+                 .I3(I3), 
+                 .O(S0));
+   OR4  I_36_127 (.I0(I4), 
+                 .I1(I5), 
+                 .I2(I6), 
+                 .I3(I7), 
+                 .O(S1));
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_138 (.I1(I4), 
+                  .I2(I5), 
+                  .I3(I6), 
+                  .I4(I7), 
+                  .O(S1));
+   NOR2  I_36_140 (.I0(S0), 
+                  .I1(S1), 
+                  .O(O_DUMMY));
+   (* RLOC = "X0Y1" *) 
+   FMAP  I_36_144 (.I1(S0), 
+                  .I2(S1), 
+                  .I3(dummy), 
+                  .I4(dummy), 
+                  .O(O_DUMMY));
+endmodule
+`timescale 1ns / 1ps
+
+module test_zero(n, 
+                 is_zero);
+
+    input [7:0] n;
+   output is_zero;
+   
+   
+   (* HU_SET = "XLXI_1_0" *) 
+   NOR8_MXILINX_test_zero  XLXI_1 (.I0(n[0]), 
+                                  .I1(n[1]), 
+                                  .I2(n[2]), 
+                                  .I3(n[3]), 
+                                  .I4(n[4]), 
+                                  .I5(n[5]), 
+                                  .I6(n[6]), 
+                                  .I7(n[7]), 
+                                  .O(is_zero));
+endmodule
