@@ -1,6 +1,8 @@
 #Xilinx ISE gitignore
+*.gise
 _ngo
 iseconfig
+isim
 *.xmsgs
 *.log
 isim
