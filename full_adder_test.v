@@ -5,9 +5,9 @@
 module full_adder_full_adder_sch_tb();
 
 // Inputs
-   reg Y;
-   reg X;
-   reg Cprev;
+   reg Y = 0;
+   reg X = 0;
+   reg Cprev = 0;
 	integer i = 0;
 	parameter num_inputs = 3;
 	parameter max_count = (1<<num_inputs);
