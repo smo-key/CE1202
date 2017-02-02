@@ -1,22 +1,22 @@
 // Verilog Test Fixture Template
 
-  `timescale 1 ns / 1 ps
+`timescale 1 ns / 1 ps
 
-  module TEST_gate;
-      reg [7:0] X = 8'b00000000;
-		reg [7:0] Y = 8'b00000000;
-		reg SEL = 1'b0;
-// Output
-		wire [7:0] DATA_OUT;
-		wire Cnext;
-// Instantiate the UUT
-		full_adder_8bit UUT (
-			.DATA_OUT(DATA_OUT),
-			.X(X),
-			.SEL(SEL),
-			.Cnext(Cnext),
-			.Y(Y)
-			);
+module fa_8bit_bench;
+	reg [7:0] X = 8'b00000000;
+	reg [7:0] Y = 8'b00000000;
+	reg SEL = 1'b0;
+	//Output
+	wire [7:0] DATA_OUT;
+	wire Cnext;
+	//Instantiate the UUT
+	full_adder_8bit UUT (
+		.DATA_OUT(DATA_OUT),
+		.X(X),
+		.SEL(SEL),
+		.Cnext(Cnext),
+		.Y(Y)
+		);
 // Initialize Inputs
 	initial begin
 		#100; //Current Time: 100ns

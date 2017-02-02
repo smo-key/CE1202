@@ -2,7 +2,7 @@
 
 `timescale 1 ns / 1 ps
 
-module mux_2to1_8bit_vtest();
+module mux_2to1_8bit_bench();
 	//Inputs
 	reg sel = 1'b0;
 	reg [7:0] in0 = 8'b00000000;

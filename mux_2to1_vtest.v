@@ -2,7 +2,7 @@
 
 `timescale 1ns / 1ps
 
-module mux_2to1_vtest();
+module mux_2to1_bench();
 	//Inputs
 	reg sel = 1'b0;
 	reg in0 = 1'b0;

@@ -34,16 +34,11 @@
         <signal name="XLXN_60" />
         <signal name="XLXN_61" />
         <signal name="XLXN_62" />
-        <signal name="XLXN_64" />
         <signal name="XLXN_66" />
         <signal name="XLXN_67" />
-        <signal name="XLXN_68" />
         <signal name="XLXN_69" />
-        <signal name="XLXN_71" />
         <signal name="XLXN_74" />
-        <signal name="XLXN_75" />
         <signal name="XLXN_76" />
-        <signal name="XLXN_79" />
         <signal name="XLXN_80" />
         <signal name="XLXN_82" />
         <signal name="X(7:0)" />
@@ -54,7 +49,6 @@
         <signal name="XLXN_93" />
         <signal name="XLXN_55" />
         <signal name="XLXN_97" />
-        <signal name="XLXN_99" />
         <signal name="SEL" />
         <port polarity="Output" name="Cnext" />
         <port polarity="Input" name="X(7:0)" />

@@ -17,8 +17,6 @@
         <signal name="g(1)" />
         <signal name="g(2)" />
         <signal name="g(3)" />
-        <signal name="XLXN_15" />
-        <signal name="XLXN_16" />
         <signal name="XLXN_17" />
         <signal name="XLXN_18" />
         <signal name="XLXN_19" />

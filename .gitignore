@@ -37,6 +37,7 @@ xst
 *.schbak
 *.schcmd
 *.gise
+*.spl
 
 #other junk
 *.swp

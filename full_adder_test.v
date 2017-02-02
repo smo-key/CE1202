@@ -2,36 +2,40 @@
 
 `timescale 1ns / 1ps
 
-module full_adder_full_adder_sch_tb();
+module fa_1bit_bench();
 
-// Inputs
-   reg Y = 0;
-   reg X = 0;
-   reg Cprev = 0;
+	//Inputs
+   reg a = 0;
+   reg b = 0;
+   reg c_in = 0;
 	integer i = 0;
 	parameter num_inputs = 3;
 	parameter max_count = (1<<num_inputs);
 
-// Output
-   wire Cnext;
-   wire RES;
+	//Output
+   wire c_out;
+   wire sum;
+	wire p; //propagate
+	wire g; //generate
 
-// Bidirs
+	//Bidirs
 
-// Instantiate the UUT
+	//Instantiate the UUT
    full_adder UUT (
-		.Y(Y), 
-		.X(X), 
-		.Cprev(Cprev), 
-		.Cnext(Cnext), 
-		.RES(RES)
+		.a(a), 
+		.b(b), 
+		.c_in(c_in), 
+		.c_out(c_out), 
+		.s(sum),
+		.p(p),
+		.g(g)
    );
-// Initialize Inputs
+	//Initialize Inputs
 	initial begin
 		#100; //Wait 100ns
 		for (i=1; i<max_count; i=i+1)
 			begin
-			{Cprev,X,Y} = i; //Cycle through all possible input combinations.
+			{c_in,a,b} = i; //Cycle through all possible input combinations.
 			#100; //Wait 100ns; This loop will take 800ns to execute.
 			end
 	end
