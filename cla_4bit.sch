@@ -32,7 +32,6 @@
         <signal name="XLXN_28" />
         <signal name="XLXN_29" />
         <signal name="XLXN_30" />
-        <signal name="XLXN_31" />
         <signal name="c_out(0)" />
         <signal name="c_out(1)" />
         <signal name="c_out(2)" />
@@ -43,6 +42,7 @@
         <port polarity="Output" name="pg" />
         <port polarity="Output" name="gg" />
         <port polarity="Input" name="c_in" />
+        <port polarity="Output" name="c_out(3:0)" />
         <blockdef name="and4">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-112" y2="-112" x1="144" />
@@ -388,7 +388,6 @@
         <bustap x2="2384" y1="2368" y2="2368" x1="2480" />
         <bustap x2="2384" y1="2640" y2="2640" x1="2480" />
         <branch name="c_out(3:0)">
-            <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="2480" y="1344" type="branch" />
             <wire x2="2480" y1="1344" y2="1440" x1="2480" />
             <wire x2="2480" y1="1440" y2="1776" x1="2480" />
             <wire x2="2480" y1="1776" y2="2368" x1="2480" />
@@ -542,5 +541,6 @@
             <wire x2="720" y1="2208" y2="3120" x1="720" />
             <wire x2="1536" y1="3120" y2="3120" x1="720" />
         </branch>
+        <iomarker fontsize="28" x="2480" y="1344" name="c_out(3:0)" orien="R270" />
     </sheet>
 </drawing>
