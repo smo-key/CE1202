@@ -56,12 +56,14 @@
         <port polarity="Output" name="Data_Out(7:0)" />
         <port polarity="Input" name="SEL" />
         <blockdef name="full_adder">
-            <timestamp>2017-2-1T16:46:23</timestamp>
-            <rect width="256" x="64" y="-192" height="192" />
-            <line x2="0" y1="-160" y2="-160" x1="64" />
-            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <timestamp>2017-2-6T4:28:15</timestamp>
+            <rect width="256" x="64" y="-256" height="256" />
+            <line x2="0" y1="-224" y2="-224" x1="64" />
+            <line x2="0" y1="-128" y2="-128" x1="64" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="384" y1="-224" y2="-224" x1="320" />
             <line x2="384" y1="-160" y2="-160" x1="320" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="xor2">
@@ -77,32 +79,40 @@
             <arc ex="208" ey="-96" sx="128" sy="-48" r="88" cx="132" cy="-136" />
         </blockdef>
         <block symbolname="full_adder" name="XLXI_1">
-            <blockpin signalname="XLXN_1" name="Y" />
-            <blockpin signalname="XLXN_93" name="X" />
-            <blockpin signalname="XLXN_42" name="Cprev" />
-            <blockpin signalname="Cnext" name="Cnext" />
-            <blockpin signalname="XLXN_90" name="RES" />
+            <blockpin name="a" />
+            <blockpin name="b" />
+            <blockpin signalname="XLXN_42" name="c_in" />
+            <blockpin name="p" />
+            <blockpin signalname="Cnext" name="g" />
+            <blockpin name="sum" />
+            <blockpin signalname="XLXN_90" name="c_out" />
         </block>
         <block symbolname="full_adder" name="XLXI_4">
-            <blockpin signalname="XLXN_17" name="Y" />
-            <blockpin signalname="XLXN_60" name="X" />
-            <blockpin signalname="XLXN_37" name="Cprev" />
-            <blockpin signalname="XLXN_38" name="Cnext" />
-            <blockpin signalname="XLXN_51" name="RES" />
+            <blockpin signalname="XLXN_36" name="a" />
+            <blockpin name="b" />
+            <blockpin signalname="XLXN_37" name="c_in" />
+            <blockpin signalname="XLXN_36" name="p" />
+            <blockpin signalname="XLXN_38" name="g" />
+            <blockpin name="sum" />
+            <blockpin signalname="XLXN_51" name="c_out" />
         </block>
         <block symbolname="full_adder" name="XLXI_6">
-            <blockpin signalname="XLXN_3" name="Y" />
-            <blockpin signalname="XLXN_56" name="X" />
-            <blockpin signalname="XLXN_40" name="Cprev" />
-            <blockpin signalname="XLXN_41" name="Cnext" />
-            <blockpin signalname="XLXN_48" name="RES" />
+            <blockpin name="a" />
+            <blockpin name="b" />
+            <blockpin signalname="XLXN_40" name="c_in" />
+            <blockpin name="p" />
+            <blockpin signalname="XLXN_41" name="g" />
+            <blockpin name="sum" />
+            <blockpin signalname="XLXN_48" name="c_out" />
         </block>
         <block symbolname="full_adder" name="XLXI_7">
-            <blockpin signalname="XLXN_16" name="Y" />
-            <blockpin signalname="XLXN_58" name="X" />
-            <blockpin signalname="XLXN_38" name="Cprev" />
-            <blockpin signalname="XLXN_39" name="Cnext" />
-            <blockpin signalname="XLXN_50" name="RES" />
+            <blockpin name="a" />
+            <blockpin name="b" />
+            <blockpin signalname="XLXN_38" name="c_in" />
+            <blockpin name="p" />
+            <blockpin signalname="XLXN_39" name="g" />
+            <blockpin name="sum" />
+            <blockpin signalname="XLXN_50" name="c_out" />
         </block>
         <block symbolname="xor2" name="XLXI_20">
             <blockpin signalname="XLXN_66" name="I0" />
@@ -125,11 +135,13 @@
             <blockpin signalname="XLXN_17" name="O" />
         </block>
         <block symbolname="full_adder" name="XLXI_5">
-            <blockpin signalname="XLXN_9" name="Y" />
-            <blockpin signalname="XLXN_62" name="X" />
-            <blockpin name="Cprev" />
-            <blockpin signalname="XLXN_36" name="Cnext" />
-            <blockpin signalname="XLXN_53" name="RES" />
+            <blockpin name="a" />
+            <blockpin name="b" />
+            <blockpin signalname="SEL" name="c_in" />
+            <blockpin name="p" />
+            <blockpin signalname="XLXN_36" name="g" />
+            <blockpin name="sum" />
+            <blockpin signalname="XLXN_53" name="c_out" />
         </block>
         <block symbolname="xor2" name="XLXI_19">
             <blockpin signalname="XLXN_80" name="I0" />
@@ -137,11 +149,13 @@
             <blockpin signalname="XLXN_9" name="O" />
         </block>
         <block symbolname="full_adder" name="XLXI_8">
-            <blockpin signalname="XLXN_8" name="Y" />
-            <blockpin signalname="XLXN_61" name="X" />
-            <blockpin signalname="XLXN_36" name="Cprev" />
-            <blockpin signalname="XLXN_37" name="Cnext" />
-            <blockpin signalname="XLXN_52" name="RES" />
+            <blockpin name="a" />
+            <blockpin name="b" />
+            <blockpin signalname="XLXN_36" name="c_in" />
+            <blockpin name="p" />
+            <blockpin signalname="XLXN_37" name="g" />
+            <blockpin name="sum" />
+            <blockpin signalname="XLXN_52" name="c_out" />
         </block>
         <block symbolname="xor2" name="XLXI_18">
             <blockpin signalname="XLXN_97" name="I0" />
@@ -154,18 +168,22 @@
             <blockpin signalname="XLXN_12" name="O" />
         </block>
         <block symbolname="full_adder" name="XLXI_2">
-            <blockpin signalname="XLXN_12" name="Y" />
-            <blockpin signalname="XLXN_55" name="X" />
-            <blockpin signalname="XLXN_41" name="Cprev" />
-            <blockpin signalname="XLXN_42" name="Cnext" />
-            <blockpin signalname="XLXN_47" name="RES" />
+            <blockpin name="a" />
+            <blockpin name="b" />
+            <blockpin signalname="XLXN_41" name="c_in" />
+            <blockpin name="p" />
+            <blockpin signalname="XLXN_42" name="g" />
+            <blockpin name="sum" />
+            <blockpin signalname="XLXN_47" name="c_out" />
         </block>
         <block symbolname="full_adder" name="XLXI_3">
-            <blockpin signalname="XLXN_15" name="Y" />
-            <blockpin signalname="XLXN_57" name="X" />
-            <blockpin signalname="XLXN_39" name="Cprev" />
-            <blockpin signalname="XLXN_40" name="Cnext" />
-            <blockpin signalname="XLXN_91" name="RES" />
+            <blockpin name="a" />
+            <blockpin name="b" />
+            <blockpin signalname="XLXN_39" name="c_in" />
+            <blockpin name="p" />
+            <blockpin signalname="XLXN_40" name="g" />
+            <blockpin name="sum" />
+            <blockpin signalname="XLXN_91" name="c_out" />
         </block>
         <block symbolname="xor2" name="XLXI_23">
             <blockpin signalname="XLXN_82" name="I0" />
@@ -225,7 +243,9 @@
         <branch name="XLXN_36">
             <wire x2="2656" y1="1408" y2="1408" x1="2544" />
             <wire x2="2656" y1="1408" y2="1472" x1="2656" />
-            <wire x2="2544" y1="1408" y2="1936" x1="2544" />
+            <wire x2="2544" y1="1408" y2="1472" x1="2544" />
+            <wire x2="2544" y1="1472" y2="1856" x1="2544" />
+            <wire x2="2544" y1="1856" y2="1936" x1="2544" />
             <wire x2="3088" y1="1936" y2="1936" x1="2544" />
             <wire x2="3088" y1="1856" y2="1936" x1="3088" />
         </branch>
@@ -432,10 +452,12 @@
             <wire x2="2128" y1="960" y2="1168" x1="2128" />
             <wire x2="2512" y1="544" y2="544" x1="2128" />
             <wire x2="2816" y1="544" y2="544" x1="2512" />
-            <wire x2="3120" y1="544" y2="544" x1="2816" />
-            <wire x2="3120" y1="544" y2="1168" x1="3120" />
             <wire x2="2816" y1="544" y2="832" x1="2816" />
             <wire x2="2816" y1="832" y2="1168" x1="2816" />
+            <wire x2="2960" y1="544" y2="544" x1="2816" />
+            <wire x2="3120" y1="544" y2="544" x1="2960" />
+            <wire x2="3120" y1="544" y2="1168" x1="3120" />
+            <wire x2="2960" y1="544" y2="1472" x1="2960" />
             <wire x2="2512" y1="544" y2="1168" x1="2512" />
             <wire x2="1744" y1="544" y2="720" x1="1744" />
             <wire x2="1744" y1="720" y2="848" x1="1744" />

@@ -12,14 +12,14 @@
         <signal name="c_in" />
         <signal name="g" />
         <signal name="XLXN_144" />
-        <signal name="s" />
+        <signal name="sum" />
         <signal name="c_out" />
         <port polarity="Input" name="a" />
         <port polarity="Input" name="b" />
         <port polarity="Output" name="p" />
         <port polarity="Input" name="c_in" />
         <port polarity="Output" name="g" />
-        <port polarity="Output" name="s" />
+        <port polarity="Output" name="sum" />
         <port polarity="Output" name="c_out" />
         <blockdef name="and2">
             <timestamp>2000-1-1T10:10:10</timestamp>
@@ -62,7 +62,7 @@
         <block symbolname="xor2" name="XLXI_18">
             <blockpin signalname="c_in" name="I0" />
             <blockpin signalname="p" name="I1" />
-            <blockpin signalname="s" name="O" />
+            <blockpin signalname="sum" name="O" />
         </block>
         <block symbolname="and2" name="XLXI_19">
             <blockpin signalname="c_in" name="I0" />
@@ -124,8 +124,9 @@
             <wire x2="1376" y1="1488" y2="1568" x1="1376" />
             <wire x2="1424" y1="1568" y2="1568" x1="1376" />
         </branch>
-        <branch name="s">
-            <wire x2="1744" y1="1264" y2="1264" x1="1344" />
+        <branch name="sum">
+            <wire x2="1360" y1="1264" y2="1264" x1="1344" />
+            <wire x2="1744" y1="1264" y2="1264" x1="1360" />
         </branch>
         <branch name="c_out">
             <wire x2="1728" y1="1600" y2="1600" x1="1680" />
@@ -135,8 +136,8 @@
         <iomarker fontsize="28" x="512" y="1024" name="a" orien="R180" />
         <iomarker fontsize="28" x="512" y="1088" name="b" orien="R180" />
         <iomarker fontsize="28" x="1744" y="1600" name="c_out" orien="R0" />
-        <iomarker fontsize="28" x="1744" y="1264" name="s" orien="R0" />
         <iomarker fontsize="28" x="1024" y="1888" name="p" orien="R90" />
         <iomarker fontsize="28" x="1376" y="1888" name="g" orien="R90" />
+        <iomarker fontsize="28" x="1744" y="1264" name="sum" orien="R0" />
     </sheet>
 </drawing>
