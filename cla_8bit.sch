@@ -6,9 +6,7 @@
         <trait edittrait="all:0" />
     </attr>
     <netlist>
-        <signal name="XLXN_22" />
-        <signal name="c_out(8)">
-        </signal>
+        <signal name="c_out(8)" />
         <signal name="c_in" />
         <signal name="netx1" />
         <signal name="netx2" />
@@ -17,24 +15,15 @@
         <signal name="XLXN_28" />
         <signal name="netx3" />
         <signal name="netx4" />
-        <signal name="XLXN_110" />
-        <signal name="XLXN_111(3:0)" />
-        <signal name="XLXN_113" />
-        <signal name="XLXN_114" />
-        <signal name="XLXN_115" />
-        <signal name="XLXN_116" />
         <signal name="p(7:0)" />
         <signal name="g(7:0)" />
         <signal name="g(7:4)" />
         <signal name="g(3:0)" />
         <signal name="p(7:4)" />
         <signal name="p(3:0)" />
-        <signal name="XLXN_134" />
         <signal name="c_out(8:0)" />
         <signal name="c_out(3:0)" />
         <signal name="c_out(7:4)" />
-        <signal name="XLXN_141" />
-        <signal name="XLXN_142" />
         <signal name="XLXN_143" />
         <port polarity="Input" name="c_in" />
         <port polarity="Input" name="p(7:0)" />
@@ -87,7 +76,7 @@
             <line x2="48" y1="-176" y2="-176" x1="112" />
         </blockdef>
         <blockdef name="cla_4bit">
-            <timestamp>2017-2-6T17:17:46</timestamp>
+            <timestamp>2017-2-6T20:14:15</timestamp>
             <rect width="64" x="320" y="20" height="24" />
             <line x2="384" y1="32" y2="32" x1="320" />
             <rect width="64" x="0" y="-172" height="24" />

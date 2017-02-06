@@ -39,7 +39,7 @@
         <port polarity="Input" name="sel" />
         <port polarity="Output" name="mux_out(7:0)" />
         <blockdef name="mux_2to1">
-            <timestamp>2017-2-1T16:56:33</timestamp>
+            <timestamp>2017-2-6T20:14:32</timestamp>
             <rect width="256" x="64" y="-192" height="192" />
             <line x2="0" y1="-160" y2="-160" x1="64" />
             <line x2="0" y1="-96" y2="-96" x1="64" />
