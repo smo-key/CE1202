@@ -9,7 +9,6 @@
         <signal name="a(7:0)" />
         <signal name="b(7:0)" />
         <signal name="SEL" />
-        <signal name="XLXN_10" />
         <signal name="b(1)" />
         <signal name="b(7)" />
         <signal name="b(6)" />
@@ -34,50 +33,20 @@
         <signal name="XLXN_34" />
         <signal name="XLXN_35" />
         <signal name="XLXN_36" />
-        <signal name="XLXN_37" />
-        <signal name="XLXN_40" />
-        <signal name="XLXN_41(8:0)" />
-        <signal name="XLXN_42" />
         <signal name="c_out(1)" />
         <signal name="c_out(2)" />
-        <signal name="XLXN_45" />
         <signal name="c_out(4)" />
         <signal name="c_out(5)" />
         <signal name="c_out(6)" />
-        <signal name="XLXN_50" />
-        <signal name="XLXN_52" />
         <signal name="g(4)" />
-        <signal name="XLXN_57" />
         <signal name="g(6)" />
-        <signal name="XLXN_60" />
         <signal name="p(7)" />
         <signal name="p(6)" />
         <signal name="p(5)" />
         <signal name="p(4)" />
-        <signal name="XLXN_74" />
-        <signal name="XLXN_75" />
-        <signal name="XLXN_77" />
-        <signal name="XLXN_78" />
-        <signal name="XLXN_79" />
-        <signal name="XLXN_80" />
-        <signal name="XLXN_81" />
-        <signal name="XLXN_82" />
-        <signal name="XLXN_84" />
-        <signal name="XLXN_86" />
         <signal name="XLXN_38(7:0)" />
         <signal name="XLXN_39(7:0)" />
         <signal name="c_out(8:7)" />
-        <signal name="XLXN_68" />
-        <signal name="XLXN_93" />
-        <signal name="XLXN_94" />
-        <signal name="XLXN_96" />
-        <signal name="XLXN_97" />
-        <signal name="XLXN_98" />
-        <signal name="XLXN_99" />
-        <signal name="XLXN_100" />
-        <signal name="XLXN_101" />
-        <signal name="XLXN_103" />
-        <signal name="XLXN_105" />
         <signal name="XLXN_107(8:0)" />
         <signal name="p(0)" />
         <signal name="SUM(7:0)" />
@@ -127,7 +96,7 @@
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="cla_8bit">
-            <timestamp>2017-2-7T23:9:7</timestamp>
+            <timestamp>2017-2-8T17:8:22</timestamp>
             <rect width="256" x="64" y="-192" height="192" />
             <line x2="0" y1="-160" y2="-160" x1="64" />
             <rect width="64" x="0" y="-108" height="24" />

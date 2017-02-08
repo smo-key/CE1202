@@ -364,9 +364,9 @@
             <wire x2="1936" y1="1776" y2="1776" x1="1856" />
         </branch>
         <branch name="c_out(0)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2336" y="1440" type="branch" />
-            <wire x2="2336" y1="1440" y2="1440" x1="2192" />
-            <wire x2="2384" y1="1440" y2="1440" x1="2336" />
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="1440" type="branch" />
+            <wire x2="2320" y1="1440" y2="1440" x1="2192" />
+            <wire x2="2384" y1="1440" y2="1440" x1="2320" />
         </branch>
         <branch name="c_out(1)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="1776" type="branch" />
@@ -379,9 +379,9 @@
             <wire x2="2384" y1="2368" y2="2368" x1="2320" />
         </branch>
         <branch name="c_out(3)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2304" y="2640" type="branch" />
-            <wire x2="2304" y1="2640" y2="2640" x1="2192" />
-            <wire x2="2384" y1="2640" y2="2640" x1="2304" />
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2320" y="2640" type="branch" />
+            <wire x2="2320" y1="2640" y2="2640" x1="2192" />
+            <wire x2="2384" y1="2640" y2="2640" x1="2320" />
         </branch>
         <bustap x2="2384" y1="1440" y2="1440" x1="2480" />
         <bustap x2="2384" y1="1776" y2="1776" x1="2480" />
