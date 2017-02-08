@@ -39,5 +39,28 @@ xst
 *.gise
 *.spl
 
+#route and programming
+
+*.bgn
+*.bit
+*.drc
+*.ncd
+*.pad
+*.par
+*.pcf
+*.ptwx
+*.twr
+*.twx
+*.unroutes
+*.ut
+*.xpi
+*.xwbt
+*.map
+*.mrp
+*.csv
+*.txt
+*.xml
+*.ngm
+
 #other junk
 *.swp
