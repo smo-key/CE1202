@@ -69,14 +69,6 @@
         <signal name="c_out(2)" />
         <signal name="c_out(1)" />
         <signal name="c_out(0)" />
-        <signal name="XLXN_80" />
-        <signal name="XLXN_82" />
-        <signal name="XLXN_83" />
-        <signal name="XLXN_84" />
-        <signal name="XLXN_85" />
-        <signal name="XLXN_86" />
-        <signal name="XLXN_92" />
-        <signal name="XLXN_95" />
         <signal name="XLXN_96" />
         <port polarity="Input" name="b(7:0)" />
         <port polarity="Input" name="a(7:0)" />

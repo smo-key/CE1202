@@ -21,13 +21,10 @@
         <signal name="c_out(3:0)" />
         <signal name="c_out(7:4)" />
         <signal name="XLXN_143" />
-        <signal name="XLXN_145" />
         <signal name="XLXN_146" />
         <signal name="XLXN_147" />
         <signal name="XLXN_148" />
         <signal name="XLXN_149" />
-        <signal name="XLXN_150" />
-        <signal name="XLXN_151" />
         <port polarity="Input" name="c_in" />
         <port polarity="Input" name="p(7:0)" />
         <port polarity="Input" name="g(7:0)" />
