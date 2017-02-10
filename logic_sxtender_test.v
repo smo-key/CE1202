@@ -34,7 +34,7 @@ initial begin
 	for (i=0; i<max_count; i=i+1)
 		begin
 			{M,S1,S0,a_i,b_i} = i; //Cycle through all 5 input combinations.
-			#100; //Wait 100ns. How many combinations won't be
+			#50; //Wait 100ns. How many combinations won't be
 		end //tested because of the 3000ns time constraint?
 	end
 endmodule
