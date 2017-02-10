@@ -3,6 +3,7 @@
 _ngo
 iseconfig
 isim
+_xmsgs
 *.xmsgs
 *.log
 isim
