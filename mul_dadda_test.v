@@ -7,6 +7,7 @@ module mul_dadda_test();
 // Inputs
    reg [7:0] b;
    reg [7:0] a;
+	reg c_out;
 	integer i, j;
 
 // Output
@@ -21,13 +22,16 @@ module mul_dadda_test();
    mul_dadda UUT (
 		.mul(mul), 
 		.b(b), 
-		.a(a)
+		.a(a),
+		.c_out(c_out)
    );
 // Initialize Inputs
    initial begin
-	for (i=0; i<(1<<4); i=i+1)
+	//-(1<<4)+1 .. (1<<4) for signed
+	//0 .. (1<<8) for unsigned
+	for (i=0; i<(1<<5); i=i+1) 
 		begin
-		for (j=0; j<(1<<4); j=j+1)
+		for (j=0; j<(1<<5); j=j+1)
 			begin
 				{a} = j;
 				{b} = i;
