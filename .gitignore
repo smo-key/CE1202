@@ -38,10 +38,12 @@ xst
 *.schbak
 *.schcmd
 *.gise
+*log
 *.spl
 
 #route and programming
 
+*.bmm
 *.bgn
 *.bit
 *.drc

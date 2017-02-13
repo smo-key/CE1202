@@ -10,6 +10,7 @@ module alu_decoder_test();
 
 // Output
    wire neg;
+	wire inv;
    wire andl;
    wire equ;
    wire orl;
@@ -23,7 +24,7 @@ module alu_decoder_test();
 // Instantiate the UUT
    alu_decoder UUT (
 		.op(op), 
-		.neg(neg), 
+		.inv(inv), 
 		.andl(andl), 
 		.equ(equ), 
 		.orl(orl), 
@@ -32,7 +33,8 @@ module alu_decoder_test();
 		.sub(sub), 
 		.inc(inc), 
 		.cmp(cmp), 
-		.muls(muls)
+		.muls(muls),
+		.neg(neg)
    );
 // Initialize Inputs
 	initial begin

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="copy_of_inv8">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2017-2-12T19:52:24</timestamp>
+    <attr value="INV8_MXILINX" name="VeriModel" />
+    <attr value="Copy Of Symbol With Level: MXILINX" name="Level" />
+    <attr value="INV8_MXILINX" name="VhdlModel" />
+    <attr value="2.0.0" name="Libver" />
+    <pin polarity="Input" x="0" y="-32" name="I(7:0)" />
+    <pin polarity="Output" x="224" y="-32" name="O(7:0)" />
+    <graph>
+        <circle r="16" cx="144" cy="-32" />
+        <line x2="64" y1="-32" y2="-32" x1="0" />
+        <rect width="64" x="160" y="-44" height="24" />
+        <rect width="64" x="0" y="-44" height="24" />
+        <line x2="128" y1="-64" y2="-32" x1="64" />
+        <line x2="64" y1="-32" y2="0" x1="128" />
+        <line x2="64" y1="0" y2="-64" x1="64" />
+        <line x2="160" y1="-32" y2="-32" x1="224" />
+    </graph>
+</symbol>
