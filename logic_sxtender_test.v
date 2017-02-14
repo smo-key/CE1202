@@ -2,7 +2,7 @@
 
 `timescale 1ns / 1ps
 
-module logic_extender_logic_extender_sch_tb();
+module logic_extender_tes();
 
 // Inputs
    reg a_i =0;

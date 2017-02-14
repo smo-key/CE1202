@@ -2,7 +2,7 @@
 
 `timescale 1ns / 1ps
 
-module Arithmetic_extender_Arithmetic_extender_sch_tb();
+module arithmetic_extender_test();
 
 // Inputs
    reg b_i =0;
