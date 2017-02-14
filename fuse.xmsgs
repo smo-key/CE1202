@@ -5,5 +5,8 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"/home/arthur/git/ce1202/alu_4bit.vf" Line 1583: Port <arg fmt="%s" index="1">overflow</arg> is not connected to this instance
+</msg>
+
 </messages>
 
