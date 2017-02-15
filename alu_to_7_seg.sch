@@ -42,8 +42,22 @@
         <signal name="XLXN_36" />
         <signal name="A(3:0)" />
         <signal name="B(3:0)" />
+        <signal name="XLXN_38(3:0)" />
+        <signal name="M" />
+        <signal name="S1" />
+        <signal name="XLXN_41" />
+        <signal name="S0" />
+        <signal name="XLXN_44" />
+        <signal name="F(3:0)" />
+        <port polarity="Input" name="A(3:0)" />
+        <port polarity="Input" name="B(3:0)" />
+        <port polarity="Input" name="M" />
+        <port polarity="Input" name="S1" />
+        <port polarity="Input" name="S0" />
+        <port polarity="Output" name="XLXN_44" />
+        <port polarity="Output" name="F(3:0)" />
         <blockdef name="bin_to_7_seg">
-            <timestamp>2017-2-12T19:37:16</timestamp>
+            <timestamp>2017-2-15T16:24:3</timestamp>
             <rect width="256" x="64" y="-448" height="448" />
             <rect width="64" x="0" y="-428" height="24" />
             <line x2="0" y1="-416" y2="-416" x1="64" />
@@ -63,6 +77,20 @@
             <line x2="40" y1="-64" y2="-64" x1="88" />
             <line x2="64" y1="-64" y2="-80" x1="64" />
             <line x2="64" y1="-128" y2="-96" x1="64" />
+        </blockdef>
+        <blockdef name="alu_lab_instructions">
+            <timestamp>2017-2-15T17:19:8</timestamp>
+            <rect width="256" x="64" y="-320" height="320" />
+            <rect width="64" x="0" y="-300" height="24" />
+            <line x2="0" y1="-288" y2="-288" x1="64" />
+            <rect width="64" x="0" y="-236" height="24" />
+            <line x2="0" y1="-224" y2="-224" x1="64" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="384" y1="-288" y2="-288" x1="320" />
+            <rect width="64" x="320" y="-44" height="24" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <block symbolname="bin_to_7_seg" name="XLXI_1">
             <blockpin signalname="A(3:0)" name="bin_input(3:0)" />
@@ -95,7 +123,7 @@
             <blockpin signalname="XLXN_22" name="e" />
         </block>
         <block symbolname="bin_to_7_seg" name="XLXI_4">
-            <blockpin name="bin_input(3:0)" />
+            <blockpin signalname="F(3:0)" name="bin_input(3:0)" />
             <blockpin signalname="XLXN_8" name="a" />
             <blockpin signalname="XLXN_9" name="b" />
             <blockpin signalname="XLXN_10" name="c" />
@@ -106,6 +134,15 @@
         </block>
         <block symbolname="gnd" name="XLXI_5">
             <blockpin signalname="XLXN_3" name="G" />
+        </block>
+        <block symbolname="alu_lab_instructions" name="XLXI_6">
+            <blockpin signalname="A(3:0)" name="B(3:0)" />
+            <blockpin signalname="B(3:0)" name="A(3:0)" />
+            <blockpin signalname="M" name="M" />
+            <blockpin signalname="S1" name="S1" />
+            <blockpin signalname="S0" name="S0" />
+            <blockpin signalname="XLXN_44" name="c_out" />
+            <blockpin signalname="F(3:0)" name="SUM(3:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -123,7 +160,6 @@
             <wire x2="1440" y1="880" y2="960" x1="1440" />
             <wire x2="1440" y1="960" y2="1056" x1="1440" />
             <wire x2="1440" y1="1056" y2="1136" x1="1440" />
-            <wire x2="1440" y1="1136" y2="1200" x1="1440" />
         </branch>
         <bustap x2="1344" y1="880" y2="880" x1="1440" />
         <bustap x2="1344" y1="960" y2="960" x1="1440" />
@@ -297,16 +333,65 @@
             <wire x2="1984" y1="624" y2="624" x1="1904" />
         </branch>
         <branch name="A(3:0)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="944" y="240" type="branch" />
-            <wire x2="944" y1="240" y2="240" x1="896" />
-            <wire x2="1472" y1="240" y2="240" x1="944" />
-            <wire x2="1520" y1="240" y2="240" x1="1472" />
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="464" y="240" type="branch" />
+            <wire x2="464" y1="2032" y2="2032" x1="208" />
+            <wire x2="1520" y1="240" y2="240" x1="464" />
+            <wire x2="464" y1="240" y2="2016" x1="464" />
+            <wire x2="464" y1="2016" y2="2032" x1="464" />
+            <wire x2="672" y1="2016" y2="2016" x1="464" />
+            <wire x2="672" y1="2016" y2="2176" x1="672" />
+            <wire x2="752" y1="2176" y2="2176" x1="672" />
         </branch>
+        <iomarker fontsize="28" x="208" y="2032" name="A(3:0)" orien="R180" />
+        <iomarker fontsize="28" x="208" y="2160" name="B(3:0)" orien="R180" />
+        <instance x="752" y="2464" name="XLXI_6" orien="R0">
+        </instance>
         <branch name="B(3:0)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1072" y="1392" type="branch" />
-            <wire x2="1072" y1="1392" y2="1392" x1="848" />
-            <wire x2="1424" y1="1392" y2="1392" x1="1072" />
-            <wire x2="1472" y1="1392" y2="1392" x1="1424" />
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="608" y="1392" type="branch" />
+            <wire x2="608" y1="2160" y2="2160" x1="208" />
+            <wire x2="608" y1="2160" y2="2240" x1="608" />
+            <wire x2="752" y1="2240" y2="2240" x1="608" />
+            <wire x2="608" y1="1392" y2="2160" x1="608" />
+            <wire x2="1472" y1="1392" y2="1392" x1="608" />
         </branch>
+        <branch name="M">
+            <wire x2="224" y1="2304" y2="2304" x1="48" />
+            <wire x2="752" y1="2304" y2="2304" x1="224" />
+            <wire x2="224" y1="2080" y2="2304" x1="224" />
+            <wire x2="1072" y1="2080" y2="2080" x1="224" />
+            <wire x2="1344" y1="960" y2="960" x1="1072" />
+            <wire x2="1072" y1="960" y2="2080" x1="1072" />
+        </branch>
+        <branch name="S1">
+            <wire x2="272" y1="2368" y2="2368" x1="48" />
+            <wire x2="752" y1="2368" y2="2368" x1="272" />
+            <wire x2="1344" y1="1056" y2="1056" x1="272" />
+            <wire x2="272" y1="1056" y2="2368" x1="272" />
+        </branch>
+        <branch name="S0">
+            <wire x2="400" y1="2432" y2="2432" x1="48" />
+            <wire x2="752" y1="2432" y2="2432" x1="400" />
+            <wire x2="1344" y1="1136" y2="1136" x1="400" />
+            <wire x2="400" y1="1136" y2="2432" x1="400" />
+        </branch>
+        <branch name="XLXN_44">
+            <wire x2="1216" y1="2576" y2="2576" x1="960" />
+            <wire x2="1216" y1="2176" y2="2176" x1="1136" />
+            <wire x2="1216" y1="2176" y2="2576" x1="1216" />
+        </branch>
+        <branch name="F(3:0)">
+            <wire x2="1344" y1="2432" y2="2432" x1="1136" />
+            <wire x2="1344" y1="2432" y2="2480" x1="1344" />
+            <wire x2="1344" y1="2480" y2="2544" x1="1344" />
+            <wire x2="1344" y1="2544" y2="2592" x1="1344" />
+            <wire x2="1344" y1="2592" y2="2640" x1="1344" />
+            <wire x2="1344" y1="1968" y2="2432" x1="1344" />
+            <wire x2="1552" y1="1968" y2="1968" x1="1344" />
+        </branch>
+        <iomarker fontsize="28" x="960" y="2576" name="XLXN_44" orien="R180" />
+        <iomarker fontsize="28" x="48" y="2304" name="M" orien="R180" />
+        <iomarker fontsize="28" x="48" y="2368" name="S1" orien="R180" />
+        <iomarker fontsize="28" x="48" y="2432" name="S0" orien="R180" />
+        <iomarker fontsize="28" x="1344" y="2640" name="F(3:0)" orien="R90" />
     </sheet>
 </drawing>

@@ -1,0 +1,16 @@
+// Verilog instantiation template created from schematic C:\Users\Elizabeth\Documents\CE 1202 Lab\ToyProcessor\bin_to_7_seg.sch - Wed Feb 15 10:24:13 2017
+//
+// Notes: 
+// To use this template to instantiate this component,cut-and-paste and then edit
+//
+// Instantiate the UUT
+   bin_to_7_seg UUT (
+		.a(    ), 
+		.b(    ), 
+		.c(    ), 
+		.d(    ), 
+		.g(    ), 
+		.f(    ), 
+		.e(    ), 
+		.bin_input(    )
+   );
