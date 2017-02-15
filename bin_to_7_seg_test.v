@@ -2,19 +2,21 @@
 
 `timescale 1ns / 1ps
 
-module bin_to_7_seg_bin_to_7_seg_sch_tb();
+module bin_to_7_seg_test();
 
 // Inputs
-   reg [3:0] bin_input;
+   reg [3:0] bin_input = 0;
+	integer i;
 
 // Output
    wire a;
    wire b;
    wire c;
    wire d;
+	wire e;
+	wire f;
    wire g;
-   wire f;
-   wire e;
+   
 
 // Bidirs
 
@@ -23,15 +25,18 @@ module bin_to_7_seg_bin_to_7_seg_sch_tb();
 		.a(a), 
 		.b(b), 
 		.c(c), 
-		.d(d), 
-		.g(g), 
+		.d(d),
+		.e(e), 	
 		.f(f), 
-		.e(e), 
+		.g(g), 
 		.bin_input(bin_input)
    );
-// Initialize Inputs
-   `ifdef auto_init
-       initial begin
-		bin_input = 0;
-   `endif
+// Run test
+	initial begin
+		for (i=0; i<(1<<4); i=i+1)
+			begin
+				#50;
+				{bin_input} = i;
+			end
+	end
 endmodule
