@@ -247,6 +247,10 @@
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="157"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="157"/>
     </file>
+    <file xil_pn:name="main_lab.sch" xil_pn:type="FILE_SCHEMATIC">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="158"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="158"/>
+    </file>
   </files>
 
   <properties>
