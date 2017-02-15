@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="seven_seg_control_sch">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2017-2-15T19:0:53</timestamp>
+    <timestamp>2017-2-15T23:9:48</timestamp>
     <pin polarity="Input" x="0" y="-288" name="CLK" />
     <pin polarity="Input" x="0" y="-224" name="L(6:0)" />
     <pin polarity="Input" x="0" y="-160" name="ML(6:0)" />

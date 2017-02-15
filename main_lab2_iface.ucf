@@ -1,0 +1,6 @@
+#UCF file for lab 2
+
+#LEDs
+NET LED<0> LOC=M5;
+NET LED<1> LOC=M11;
+NET LED<2> LOC=P7;
