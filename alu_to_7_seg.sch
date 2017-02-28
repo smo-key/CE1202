@@ -46,7 +46,7 @@
         <signal name="c_out" />
         <signal name="F(3:0)" />
         <signal name="CLK" />
-        <signal name="seven_seg_out(6:0)" />
+        <signal name="SS(6:0)" />
         <signal name="EN_L" />
         <signal name="EN_ML" />
         <signal name="EN_R" />
@@ -61,7 +61,7 @@
         <port polarity="Output" name="c_out" />
         <port polarity="Output" name="F(3:0)" />
         <port polarity="Input" name="CLK" />
-        <port polarity="Output" name="seven_seg_out(6:0)" />
+        <port polarity="Output" name="SS(6:0)" />
         <port polarity="Output" name="EN_L" />
         <port polarity="Output" name="EN_ML" />
         <port polarity="Output" name="EN_R" />
@@ -183,7 +183,7 @@
             <blockpin signalname="EN_L" name="EN_L" />
             <blockpin signalname="EN_ML" name="EN_ML" />
             <blockpin signalname="EN_R" name="EN_R" />
-            <blockpin signalname="seven_seg_out(6:0)" name="seven_seg_out(6:0)" />
+            <blockpin signalname="SS(6:0)" name="seven_seg_out(6:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -510,7 +510,7 @@
             <wire x2="2448" y1="208" y2="208" x1="2368" />
             <wire x2="2464" y1="208" y2="208" x1="2448" />
         </branch>
-        <branch name="seven_seg_out(6:0)">
+        <branch name="SS(6:0)">
             <wire x2="3152" y1="208" y2="208" x1="2896" />
         </branch>
         <branch name="EN_L">
@@ -522,7 +522,7 @@
         <branch name="EN_R">
             <wire x2="3152" y1="464" y2="464" x1="2896" />
         </branch>
-        <iomarker fontsize="28" x="3152" y="208" name="seven_seg_out(6:0)" orien="R0" />
+        <iomarker fontsize="28" x="3152" y="208" name="SS(6:0)" orien="R0" />
         <iomarker fontsize="28" x="3184" y="272" name="EN_L" orien="R0" />
         <iomarker fontsize="28" x="3152" y="336" name="EN_ML" orien="R0" />
         <iomarker fontsize="28" x="3152" y="464" name="EN_R" orien="R0" />
