@@ -89,7 +89,7 @@
             <line x2="64" y1="-128" y2="-96" x1="64" />
         </blockdef>
         <blockdef name="alu_lab_instructions">
-            <timestamp>2017-2-15T17:19:8</timestamp>
+            <timestamp>2017-2-15T23:28:46</timestamp>
             <rect width="256" x="64" y="-320" height="320" />
             <rect width="64" x="0" y="-300" height="24" />
             <line x2="0" y1="-288" y2="-288" x1="64" />
@@ -103,7 +103,7 @@
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="seven_seg_control_sch">
-            <timestamp>2017-2-15T19:0:53</timestamp>
+            <timestamp>2017-2-15T23:28:46</timestamp>
             <rect width="304" x="64" y="-320" height="320" />
             <line x2="0" y1="-288" y2="-288" x1="64" />
             <rect width="64" x="0" y="-236" height="24" />

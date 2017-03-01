@@ -29,7 +29,7 @@
         <port polarity="Input" name="SW(7:0)" />
         <port polarity="Input" name="BTN(3:0)" />
         <blockdef name="seven_seg_4col">
-            <timestamp>2017-2-15T22:39:0</timestamp>
+            <timestamp>2017-2-15T23:28:46</timestamp>
             <rect width="64" x="368" y="20" height="24" />
             <line x2="432" y1="32" y2="32" x1="368" />
             <rect width="64" x="0" y="-300" height="24" />

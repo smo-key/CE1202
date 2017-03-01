@@ -1,17 +1,14 @@
-#LEDs
-NET LED<0> LOC=M5;
-NET LED<1> LOC=M11;
-NET LED<2> LOC=P7;
-NET LED<3> LOC=P6;
+NET F<0> LOC=M5;
+NET F<1> LOC=M11;
+NET F<2> LOC=P7;
+NET F<3> LOC=P6;
 NET Cout LOC=G1;
 
-#Seven Segment enable bits
 NET EN_L LOC=K14;
 NET EN_ML LOC=M13;
 NET EN_MR LOC=J12;
 NET EN_R LOC=F12;
 
-#Seven Segment segment bits
 NET SS<6> LOC=L14;
 NET SS<5> LOC=H12;
 NET SS<4> LOC=N14;
@@ -20,13 +17,10 @@ NET SS<2> LOC=P12;
 NET SS<1> LOC=L13;
 NET SS<0> LOC=M12;
 
-#Pushbuttons
-
 NET S0 LOC=C11;
 NET S1 LOC=M4;
 NET M LOC=A7;
 
-#Switches
 NET B<0> LOC=P11;
 NET B<1> LOC=L3;
 NET B<2> LOC=K3;
@@ -36,5 +30,4 @@ NET A<1> LOC=F3;
 NET A<2> LOC=E2;
 NET A<3> LOC=N3;
 
-#Clock
 NET CLK LOC=B8;
