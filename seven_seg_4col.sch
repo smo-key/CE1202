@@ -14,30 +14,29 @@
         <signal name="R(5)" />
         <signal name="R(4)" />
         <signal name="R(3)" />
-        <signal name="R(2)" />
-        <signal name="R(1)" />
         <signal name="R(0)" />
+        <signal name="R(1)" />
+        <signal name="R(2)" />
         <signal name="MR(6)" />
         <signal name="MR(5)" />
         <signal name="MR(4)" />
         <signal name="MR(3)" />
-        <signal name="MR(2)" />
-        <signal name="MR(1)" />
         <signal name="MR(0)" />
+        <signal name="MR(1)" />
+        <signal name="MR(2)" />
         <signal name="ML(6)" />
         <signal name="ML(5)" />
         <signal name="ML(4)" />
         <signal name="ML(3)" />
-        <signal name="ML(2)" />
-        <signal name="ML(1)" />
         <signal name="ML(0)" />
+        <signal name="ML(1)" />
+        <signal name="ML(2)" />
         <signal name="L(6)" />
         <signal name="L(5)" />
         <signal name="L(4)" />
         <signal name="L(3)" />
-        <signal name="L(2)" />
-        <signal name="L(1)" />
         <signal name="L(0)" />
+        <signal name="L(1)" />
         <signal name="d3(3:0)" />
         <signal name="d1(3:0)" />
         <signal name="CLK" />
@@ -48,6 +47,7 @@
         <signal name="EN_MR" />
         <signal name="d0(3:0)" />
         <signal name="d2(3:0)" />
+        <signal name="L(2)" />
         <port polarity="Input" name="d3(3:0)" />
         <port polarity="Input" name="d1(3:0)" />
         <port polarity="Input" name="CLK" />
@@ -96,9 +96,9 @@
             <blockpin signalname="L(5)" name="b" />
             <blockpin signalname="L(4)" name="c" />
             <blockpin signalname="L(3)" name="d" />
-            <blockpin signalname="L(2)" name="g" />
+            <blockpin signalname="L(0)" name="g" />
             <blockpin signalname="L(1)" name="f" />
-            <blockpin signalname="L(0)" name="e" />
+            <blockpin signalname="L(2)" name="e" />
         </block>
         <block symbolname="bin_to_7_seg" name="XLXI_2">
             <blockpin signalname="d2(3:0)" name="bin_input(3:0)" />
@@ -106,9 +106,9 @@
             <blockpin signalname="ML(5)" name="b" />
             <blockpin signalname="ML(4)" name="c" />
             <blockpin signalname="ML(3)" name="d" />
-            <blockpin signalname="ML(2)" name="g" />
+            <blockpin signalname="ML(0)" name="g" />
             <blockpin signalname="ML(1)" name="f" />
-            <blockpin signalname="ML(0)" name="e" />
+            <blockpin signalname="ML(2)" name="e" />
         </block>
         <block symbolname="bin_to_7_seg" name="XLXI_3">
             <blockpin signalname="d1(3:0)" name="bin_input(3:0)" />
@@ -116,9 +116,9 @@
             <blockpin signalname="MR(5)" name="b" />
             <blockpin signalname="MR(4)" name="c" />
             <blockpin signalname="MR(3)" name="d" />
-            <blockpin signalname="MR(2)" name="g" />
+            <blockpin signalname="MR(0)" name="g" />
             <blockpin signalname="MR(1)" name="f" />
-            <blockpin signalname="MR(0)" name="e" />
+            <blockpin signalname="MR(2)" name="e" />
         </block>
         <block symbolname="bin_to_7_seg" name="XLXI_4">
             <blockpin signalname="d0(3:0)" name="bin_input(3:0)" />
@@ -126,9 +126,9 @@
             <blockpin signalname="R(5)" name="b" />
             <blockpin signalname="R(4)" name="c" />
             <blockpin signalname="R(3)" name="d" />
-            <blockpin signalname="R(2)" name="g" />
+            <blockpin signalname="R(0)" name="g" />
             <blockpin signalname="R(1)" name="f" />
-            <blockpin signalname="R(0)" name="e" />
+            <blockpin signalname="R(2)" name="e" />
         </block>
         <block symbolname="seven_seg_control_sch" name="XLXI_7">
             <blockpin signalname="CLK" name="CLK" />
@@ -256,7 +256,7 @@
             <wire x2="2144" y1="2144" y2="2144" x1="2128" />
             <wire x2="2176" y1="2144" y2="2144" x1="2144" />
         </branch>
-        <branch name="R(2)">
+        <branch name="R(0)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2160" y="2208" type="branch" />
             <wire x2="2160" y1="2208" y2="2208" x1="2128" />
             <wire x2="2176" y1="2208" y2="2208" x1="2160" />
@@ -266,7 +266,7 @@
             <wire x2="2160" y1="2272" y2="2272" x1="2128" />
             <wire x2="2176" y1="2272" y2="2272" x1="2160" />
         </branch>
-        <branch name="R(0)">
+        <branch name="R(2)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2144" y="2336" type="branch" />
             <wire x2="2144" y1="2336" y2="2336" x1="2128" />
             <wire x2="2176" y1="2336" y2="2336" x1="2144" />
@@ -291,7 +291,7 @@
             <wire x2="2080" y1="1568" y2="1568" x1="2048" />
             <wire x2="2176" y1="1568" y2="1568" x1="2080" />
         </branch>
-        <branch name="MR(2)">
+        <branch name="MR(0)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2080" y="1632" type="branch" />
             <wire x2="2080" y1="1632" y2="1632" x1="2048" />
             <wire x2="2176" y1="1632" y2="1632" x1="2080" />
@@ -301,7 +301,7 @@
             <wire x2="2096" y1="1696" y2="1696" x1="2048" />
             <wire x2="2176" y1="1696" y2="1696" x1="2096" />
         </branch>
-        <branch name="MR(0)">
+        <branch name="MR(2)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2096" y="1760" type="branch" />
             <wire x2="2096" y1="1760" y2="1760" x1="2048" />
             <wire x2="2176" y1="1760" y2="1760" x1="2096" />
@@ -327,7 +327,7 @@
             <wire x2="2096" y1="1008" y2="1008" x1="2048" />
             <wire x2="2160" y1="1008" y2="1008" x1="2096" />
         </branch>
-        <branch name="ML(2)">
+        <branch name="ML(0)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2096" y="1072" type="branch" />
             <wire x2="2096" y1="1072" y2="1072" x1="2048" />
             <wire x2="2160" y1="1072" y2="1072" x1="2096" />
@@ -338,7 +338,7 @@
             <wire x2="2096" y1="1120" y2="1136" x1="2096" />
             <wire x2="2160" y1="1120" y2="1120" x1="2096" />
         </branch>
-        <branch name="ML(0)">
+        <branch name="ML(2)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2096" y="1200" type="branch" />
             <wire x2="2096" y1="1200" y2="1200" x1="2048" />
             <wire x2="2160" y1="1200" y2="1200" x1="2096" />
@@ -365,7 +365,7 @@
             <wire x2="2144" y1="432" y2="432" x1="2128" />
             <wire x2="2176" y1="432" y2="432" x1="2144" />
         </branch>
-        <branch name="L(2)">
+        <branch name="L(0)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2128" y="480" type="branch" />
             <wire x2="2128" y1="480" y2="480" x1="2096" />
             <wire x2="2176" y1="480" y2="480" x1="2128" />
@@ -375,7 +375,7 @@
             <wire x2="2128" y1="544" y2="544" x1="2096" />
             <wire x2="2176" y1="544" y2="544" x1="2128" />
         </branch>
-        <branch name="L(0)">
+        <branch name="L(2)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2128" y="608" type="branch" />
             <wire x2="2128" y1="608" y2="608" x1="2096" />
             <wire x2="2176" y1="608" y2="608" x1="2128" />

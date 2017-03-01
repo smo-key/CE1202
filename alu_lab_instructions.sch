@@ -11,14 +11,9 @@
         <signal name="M" />
         <signal name="S1" />
         <signal name="S0" />
-        <signal name="B(3)" />
-        <signal name="XLXN_12" />
-        <signal name="B(2)" />
-        <signal name="XLXN_14" />
-        <signal name="B(1)" />
-        <signal name="XLXN_16" />
         <signal name="B(0)" />
-        <signal name="XLXN_18" />
+        <signal name="B(2)" />
+        <signal name="B(3)" />
         <signal name="XLXN_19" />
         <signal name="XLXN_20" />
         <signal name="XLXN_21" />
@@ -30,10 +25,9 @@
         <signal name="XLXN_28" />
         <signal name="XLXN_29" />
         <signal name="XLXN_30" />
-        <signal name="A(3)" />
-        <signal name="A(2)" />
-        <signal name="A(1)" />
         <signal name="A(0)" />
+        <signal name="A(2)" />
+        <signal name="A(3)" />
         <signal name="XLXN_35" />
         <signal name="c_out" />
         <signal name="SUM(3:0)" />
@@ -41,6 +35,8 @@
         <signal name="SUM(2)" />
         <signal name="SUM(1)" />
         <signal name="SUM(0)" />
+        <signal name="B(1)" />
+        <signal name="A(1)" />
         <port polarity="Input" name="B(3:0)" />
         <port polarity="Input" name="A(3:0)" />
         <port polarity="Input" name="M" />
@@ -87,63 +83,63 @@
             <line x2="64" y1="-48" y2="-144" x1="64" />
         </blockdef>
         <block symbolname="Arithmetic_extender" name="XLXI_1">
-            <blockpin signalname="A(3)" name="b_i" />
+            <blockpin signalname="A(0)" name="b_i" />
             <blockpin signalname="M" name="M" />
             <blockpin signalname="S0" name="S0" />
             <blockpin signalname="S1" name="S1" />
             <blockpin signalname="XLXN_20" name="y_i" />
         </block>
         <block symbolname="Arithmetic_extender" name="XLXI_2">
-            <blockpin signalname="A(2)" name="b_i" />
+            <blockpin signalname="A(1)" name="b_i" />
             <blockpin signalname="M" name="M" />
             <blockpin signalname="S0" name="S0" />
             <blockpin signalname="S1" name="S1" />
             <blockpin signalname="XLXN_23" name="y_i" />
         </block>
         <block symbolname="Arithmetic_extender" name="XLXI_3">
-            <blockpin signalname="A(1)" name="b_i" />
+            <blockpin signalname="A(2)" name="b_i" />
             <blockpin signalname="M" name="M" />
             <blockpin signalname="S0" name="S0" />
             <blockpin signalname="S1" name="S1" />
             <blockpin signalname="XLXN_26" name="y_i" />
         </block>
         <block symbolname="Arithmetic_extender" name="XLXI_4">
-            <blockpin signalname="A(0)" name="b_i" />
+            <blockpin signalname="A(3)" name="b_i" />
             <blockpin signalname="M" name="M" />
             <blockpin signalname="S0" name="S0" />
             <blockpin signalname="S1" name="S1" />
             <blockpin signalname="XLXN_28" name="y_i" />
         </block>
         <block symbolname="logic_extender" name="XLXI_5">
-            <blockpin signalname="B(3)" name="a_i" />
-            <blockpin signalname="S0" name="S0" />
-            <blockpin signalname="S1" name="S1" />
-            <blockpin signalname="M" name="M" />
-            <blockpin signalname="A(3)" name="b_i" />
-            <blockpin signalname="XLXN_19" name="x_i" />
-        </block>
-        <block symbolname="logic_extender" name="XLXI_6">
-            <blockpin signalname="B(1)" name="a_i" />
-            <blockpin signalname="S0" name="S0" />
-            <blockpin signalname="S1" name="S1" />
-            <blockpin signalname="M" name="M" />
-            <blockpin signalname="A(1)" name="b_i" />
-            <blockpin signalname="XLXN_25" name="x_i" />
-        </block>
-        <block symbolname="logic_extender" name="XLXI_7">
-            <blockpin signalname="B(2)" name="a_i" />
-            <blockpin signalname="S0" name="S0" />
-            <blockpin signalname="S1" name="S1" />
-            <blockpin signalname="M" name="M" />
-            <blockpin signalname="A(2)" name="b_i" />
-            <blockpin signalname="XLXN_22" name="x_i" />
-        </block>
-        <block symbolname="logic_extender" name="XLXI_8">
             <blockpin signalname="B(0)" name="a_i" />
             <blockpin signalname="S0" name="S0" />
             <blockpin signalname="S1" name="S1" />
             <blockpin signalname="M" name="M" />
             <blockpin signalname="A(0)" name="b_i" />
+            <blockpin signalname="XLXN_19" name="x_i" />
+        </block>
+        <block symbolname="logic_extender" name="XLXI_6">
+            <blockpin signalname="B(2)" name="a_i" />
+            <blockpin signalname="S0" name="S0" />
+            <blockpin signalname="S1" name="S1" />
+            <blockpin signalname="M" name="M" />
+            <blockpin signalname="A(2)" name="b_i" />
+            <blockpin signalname="XLXN_25" name="x_i" />
+        </block>
+        <block symbolname="logic_extender" name="XLXI_7">
+            <blockpin signalname="B(1)" name="a_i" />
+            <blockpin signalname="S0" name="S0" />
+            <blockpin signalname="S1" name="S1" />
+            <blockpin signalname="M" name="M" />
+            <blockpin signalname="A(1)" name="b_i" />
+            <blockpin signalname="XLXN_22" name="x_i" />
+        </block>
+        <block symbolname="logic_extender" name="XLXI_8">
+            <blockpin signalname="B(3)" name="a_i" />
+            <blockpin signalname="S0" name="S0" />
+            <blockpin signalname="S1" name="S1" />
+            <blockpin signalname="M" name="M" />
+            <blockpin signalname="A(3)" name="b_i" />
             <blockpin signalname="XLXN_27" name="x_i" />
         </block>
         <block symbolname="fa_1bit" name="XLXI_9">
@@ -245,11 +241,9 @@
             <wire x2="512" y1="640" y2="864" x1="512" />
             <wire x2="928" y1="864" y2="864" x1="512" />
             <wire x2="512" y1="864" y2="1296" x1="512" />
-            <wire x2="512" y1="1296" y2="1528" x1="512" />
-            <wire x2="512" y1="1528" y2="1536" x1="512" />
+            <wire x2="512" y1="1296" y2="1536" x1="512" />
             <wire x2="512" y1="1536" y2="1984" x1="512" />
-            <wire x2="512" y1="1984" y2="2200" x1="512" />
-            <wire x2="512" y1="2200" y2="2208" x1="512" />
+            <wire x2="512" y1="1984" y2="2208" x1="512" />
             <wire x2="512" y1="2208" y2="2608" x1="512" />
             <wire x2="512" y1="2608" y2="2672" x1="512" />
             <wire x2="944" y1="2672" y2="2672" x1="512" />
@@ -302,28 +296,28 @@
         <bustap x2="336" y1="1088" y2="1088" x1="240" />
         <bustap x2="336" y1="432" y2="432" x1="240" />
         <bustap x2="176" y1="720" y2="720" x1="80" />
-        <branch name="B(3)">
+        <branch name="B(0)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="208" y="240" type="branch" />
             <wire x2="208" y1="240" y2="240" x1="176" />
             <wire x2="656" y1="240" y2="240" x1="208" />
             <wire x2="656" y1="80" y2="240" x1="656" />
             <wire x2="944" y1="80" y2="80" x1="656" />
         </branch>
-        <branch name="B(2)">
+        <branch name="B(1)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="208" y="720" type="branch" />
             <wire x2="208" y1="720" y2="720" x1="176" />
             <wire x2="544" y1="720" y2="720" x1="208" />
             <wire x2="544" y1="720" y2="736" x1="544" />
             <wire x2="928" y1="736" y2="736" x1="544" />
         </branch>
-        <branch name="B(1)">
+        <branch name="B(2)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="208" y="1424" type="branch" />
             <wire x2="208" y1="1424" y2="1424" x1="176" />
             <wire x2="560" y1="1424" y2="1424" x1="208" />
             <wire x2="560" y1="1408" y2="1424" x1="560" />
             <wire x2="944" y1="1408" y2="1408" x1="560" />
         </branch>
-        <branch name="B(0)">
+        <branch name="B(3)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="208" y="2064" type="branch" />
             <wire x2="208" y1="2064" y2="2064" x1="176" />
             <wire x2="560" y1="2064" y2="2064" x1="208" />
@@ -391,7 +385,7 @@
             <wire x2="2272" y1="1136" y2="1136" x1="2192" />
             <wire x2="2272" y1="1136" y2="1504" x1="2272" />
         </branch>
-        <branch name="A(3)">
+        <branch name="A(0)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="384" y="432" type="branch" />
             <wire x2="384" y1="432" y2="432" x1="336" />
             <wire x2="640" y1="432" y2="432" x1="384" />
@@ -400,7 +394,7 @@
             <wire x2="944" y1="336" y2="336" x1="640" />
             <wire x2="640" y1="336" y2="432" x1="640" />
         </branch>
-        <branch name="A(2)">
+        <branch name="A(1)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="384" y="1088" type="branch" />
             <wire x2="384" y1="1088" y2="1088" x1="336" />
             <wire x2="640" y1="1088" y2="1088" x1="384" />
@@ -409,7 +403,7 @@
             <wire x2="928" y1="992" y2="992" x1="640" />
             <wire x2="640" y1="992" y2="1088" x1="640" />
         </branch>
-        <branch name="A(1)">
+        <branch name="A(2)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="384" y="1792" type="branch" />
             <wire x2="384" y1="1792" y2="1792" x1="336" />
             <wire x2="688" y1="1792" y2="1792" x1="384" />
@@ -417,7 +411,7 @@
             <wire x2="944" y1="1664" y2="1664" x1="688" />
             <wire x2="688" y1="1664" y2="1792" x1="688" />
         </branch>
-        <branch name="A(0)">
+        <branch name="A(3)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="368" y="2480" type="branch" />
             <wire x2="368" y1="2480" y2="2480" x1="336" />
             <wire x2="720" y1="2480" y2="2480" x1="368" />
