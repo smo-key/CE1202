@@ -25,13 +25,6 @@
         <signal name="XLXN_31(7:0)" />
         <signal name="XLXN_36(7:0)" />
         <signal name="cmp" />
-        <signal name="XLXN_37" />
-        <signal name="XLXN_38" />
-        <signal name="XLXN_39" />
-        <signal name="XLXN_40" />
-        <signal name="XLXN_41" />
-        <signal name="XLXN_42" />
-        <signal name="XLXN_43" />
         <signal name="op" />
         <port polarity="Input" name="dec" />
         <port polarity="Input" name="inc" />

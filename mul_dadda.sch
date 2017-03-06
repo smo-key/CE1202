@@ -95,7 +95,6 @@
         <signal name="XLXN_324" />
         <signal name="mul(7)" />
         <signal name="overflow" />
-        <signal name="XLXN_328" />
         <port polarity="Output" name="mul(15:0)" />
         <port polarity="Input" name="b(7:0)" />
         <port polarity="Input" name="a(7:0)" />

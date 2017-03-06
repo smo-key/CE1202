@@ -7,10 +7,6 @@
     </attr>
     <netlist>
         <signal name="a(7:0)" />
-        <signal name="XLXN_11" />
-        <signal name="XLXN_12" />
-        <signal name="XLXN_13" />
-        <signal name="XLXN_14" />
         <signal name="b(7:0)" />
         <signal name="XLXN_31(7:0)" />
         <signal name="XLXN_32(7:0)" />
@@ -19,7 +15,6 @@
         <signal name="zero" />
         <signal name="XLXN_36(7:0)" />
         <signal name="inv" />
-        <signal name="XLXN_43" />
         <signal name="XLXN_44" />
         <signal name="XLXN_45(7:0)" />
         <signal name="XLXN_46(7:0)" />

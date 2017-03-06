@@ -13,7 +13,6 @@
         <signal name="XLXN_6" />
         <signal name="XLXN_7" />
         <signal name="M" />
-        <signal name="XLXN_9" />
         <signal name="S0" />
         <signal name="S1" />
         <signal name="y_i" />

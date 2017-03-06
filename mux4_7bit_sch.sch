@@ -48,31 +48,6 @@
         <signal name="mux_out(6:0)" />
         <signal name="c0" />
         <signal name="c1" />
-        <signal name="XLXN_1" />
-        <signal name="XLXN_6" />
-        <signal name="XLXN_7" />
-        <signal name="XLXN_8" />
-        <signal name="XLXN_9" />
-        <signal name="XLXN_10" />
-        <signal name="XLXN_11" />
-        <signal name="XLXN_13" />
-        <signal name="XLXN_14" />
-        <signal name="XLXN_15" />
-        <signal name="XLXN_16" />
-        <signal name="XLXN_17" />
-        <signal name="XLXN_18" />
-        <signal name="XLXN_19" />
-        <signal name="XLXN_20" />
-        <signal name="XLXN_21" />
-        <signal name="XLXN_22" />
-        <signal name="XLXN_23" />
-        <signal name="XLXN_24" />
-        <signal name="XLXN_25" />
-        <signal name="XLXN_26" />
-        <signal name="XLXN_27" />
-        <signal name="XLXN_28" />
-        <signal name="XLXN_29" />
-        <signal name="XLXN_30" />
         <port polarity="Input" name="in1(6:0)" />
         <port polarity="Input" name="in2(6:0)" />
         <port polarity="Input" name="in3(6:0)" />

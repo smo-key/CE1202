@@ -21,8 +21,6 @@
         <signal name="M" />
         <signal name="x_i" />
         <signal name="b_i" />
-        <signal name="XLXN_19" />
-        <signal name="XLXN_20" />
         <port polarity="Input" name="a_i" />
         <port polarity="Input" name="S0" />
         <port polarity="Input" name="S1" />

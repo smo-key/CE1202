@@ -10,12 +10,6 @@
         <signal name="b" />
         <signal name="ab(7:0)" />
         <signal name="ab(0)" />
-        <signal name="XLXN_5" />
-        <signal name="XLXN_6" />
-        <signal name="XLXN_7" />
-        <signal name="XLXN_8" />
-        <signal name="XLXN_9" />
-        <signal name="XLXN_10" />
         <signal name="ab(1)" />
         <signal name="ab(2)" />
         <signal name="ab(3)" />
@@ -23,7 +17,6 @@
         <signal name="ab(5)" />
         <signal name="ab(6)" />
         <signal name="ab(7)" />
-        <signal name="XLXN_23" />
         <port polarity="Input" name="a" />
         <port polarity="Input" name="b" />
         <port polarity="Output" name="ab(7:0)" />

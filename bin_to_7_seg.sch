@@ -23,7 +23,6 @@
         <signal name="XLXN_79" />
         <signal name="XLXN_95" />
         <signal name="XLXN_102" />
-        <signal name="XLXN_104" />
         <signal name="XLXN_105" />
         <signal name="XLXN_112" />
         <signal name="XLXN_115" />

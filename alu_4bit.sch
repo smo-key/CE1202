@@ -13,7 +13,6 @@
         <signal name="XLXN_6" />
         <signal name="XLXN_7" />
         <signal name="XLXN_8" />
-        <signal name="XLXN_10" />
         <signal name="XLXN_11(7:0)" />
         <signal name="XLXN_13(7:0)" />
         <signal name="XLXN_20" />
@@ -27,7 +26,6 @@
         <signal name="XLXN_43(7:0)" />
         <signal name="XLXN_46(7:0)" />
         <signal name="f(7:0)" />
-        <signal name="XLXN_51" />
         <signal name="XLXN_56" />
         <signal name="XLXN_57" />
         <signal name="XLXN_58(7:0)" />
