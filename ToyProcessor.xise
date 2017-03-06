@@ -276,6 +276,18 @@
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="288"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="288"/>
     </file>
+    <file xil_pn:name="lab_counter.sch" xil_pn:type="FILE_SCHEMATIC">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="288"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="288"/>
+    </file>
+    <file xil_pn:name="zero.sch" xil_pn:type="FILE_SCHEMATIC">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="293"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="293"/>
+    </file>
+    <file xil_pn:name="datapath_lab.sch" xil_pn:type="FILE_SCHEMATIC">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="296"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="296"/>
+    </file>
   </files>
 
   <properties>
