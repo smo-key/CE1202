@@ -26,6 +26,8 @@
         <signal name="DORPC" />
         <signal name="A(7:0)" />
         <signal name="ADDORSUB" />
+        <signal name="XLXN_26(7:0)" />
+        <signal name="XLXN_27" />
         <port polarity="Output" name="REG_OUT(7:0)" />
         <port polarity="Output" name="ZERO" />
         <port polarity="Input" name="LD_IR" />
@@ -53,24 +55,6 @@
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <rect width="64" x="320" y="-236" height="24" />
             <line x2="384" y1="-224" y2="-224" x1="320" />
-        </blockdef>
-        <blockdef name="fa_cla_8bit_v2">
-            <timestamp>2017-2-9T19:35:25</timestamp>
-            <rect width="256" x="64" y="-256" height="256" />
-            <rect width="64" x="0" y="-236" height="24" />
-            <line x2="0" y1="-224" y2="-224" x1="64" />
-            <rect width="64" x="0" y="-172" height="24" />
-            <line x2="0" y1="-160" y2="-160" x1="64" />
-            <line x2="0" y1="-96" y2="-96" x1="64" />
-            <line x2="0" y1="-32" y2="-32" x1="64" />
-            <rect width="64" x="320" y="-236" height="24" />
-            <line x2="384" y1="-224" y2="-224" x1="320" />
-            <rect width="64" x="320" y="-172" height="24" />
-            <line x2="384" y1="-160" y2="-160" x1="320" />
-            <rect width="64" x="320" y="-108" height="24" />
-            <line x2="384" y1="-96" y2="-96" x1="320" />
-            <rect width="64" x="320" y="-44" height="24" />
-            <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="lab_counter">
             <timestamp>2017-3-7T18:3:5</timestamp>
@@ -102,6 +86,22 @@
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
+        <blockdef name="full_adder_8bit">
+            <timestamp>2017-3-29T18:39:23</timestamp>
+            <rect width="256" x="64" y="-256" height="256" />
+            <rect width="64" x="0" y="-236" height="24" />
+            <line x2="0" y1="-224" y2="-224" x1="64" />
+            <rect width="64" x="0" y="-140" height="24" />
+            <line x2="0" y1="-128" y2="-128" x1="64" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="64" x="320" y="-236" height="24" />
+            <line x2="384" y1="-224" y2="-224" x1="320" />
+            <line x2="384" y1="-160" y2="-160" x1="320" />
+            <rect width="64" x="320" y="-108" height="24" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
+            <rect width="64" x="320" y="-44" height="24" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+        </blockdef>
         <block symbolname="register_8bit" name="XLXI_1">
             <blockpin signalname="LD_D" name="Load" />
             <blockpin signalname="CLK" name="CLK" />
@@ -123,16 +123,6 @@
             <blockpin signalname="XLXN_1(7:0)" name="R_in(7:0)" />
             <blockpin signalname="REG_OUT(7:0)" name="R_out(7:0)" />
         </block>
-        <block symbolname="fa_cla_8bit_v2" name="XLXI_7">
-            <blockpin signalname="XLXN_22(7:0)" name="b(7:0)" />
-            <blockpin signalname="REG_OUT(7:0)" name="a(7:0)" />
-            <blockpin signalname="ADDORSUB" name="sub" />
-            <blockpin name="c_in" />
-            <blockpin name="c_out(8:0)" />
-            <blockpin name="p(7:0)" />
-            <blockpin name="g(7:0)" />
-            <blockpin signalname="XLXN_1(7:0)" name="sum(7:0)" />
-        </block>
         <block symbolname="lab_counter" name="XLXI_8">
             <blockpin signalname="XLXN_22(7:0)" name="Count_in(7:0)" />
             <blockpin signalname="LD_PC" name="Load" />
@@ -151,18 +141,27 @@
             <blockpin signalname="REG_OUT(7:0)" name="n(7:0)" />
             <blockpin signalname="ZERO" name="is_zero" />
         </block>
+        <block symbolname="full_adder_8bit" name="XLXI_12">
+            <blockpin signalname="REG_OUT(7:0)" name="b(7:0)" />
+            <blockpin signalname="XLXN_22(7:0)" name="a(7:0)" />
+            <blockpin signalname="ADDORSUB" name="sub" />
+            <blockpin signalname="XLXN_1(7:0)" name="sum(7:0)" />
+            <blockpin name="c_out" />
+            <blockpin name="g(7:0)" />
+            <blockpin name="p(7:0)" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
         <instance x="832" y="880" name="XLXI_1" orien="R0">
         </instance>
         <instance x="832" y="1488" name="XLXI_2" orien="R0">
         </instance>
-        <instance x="1504" y="992" name="XLXI_7" orien="R0">
-        </instance>
         <instance x="1408" y="1744" name="XLXI_8" orien="R0">
         </instance>
         <branch name="XLXN_1(7:0)">
-            <wire x2="2096" y1="960" y2="960" x1="1888" />
+            <wire x2="1968" y1="800" y2="800" x1="1888" />
+            <wire x2="1968" y1="800" y2="960" x1="1968" />
+            <wire x2="2096" y1="960" y2="960" x1="1968" />
         </branch>
         <instance x="2752" y="1056" name="XLXI_10" orien="R0">
         </instance>
@@ -170,13 +169,13 @@
         <instance x="2096" y="992" name="XLXI_3" orien="R0">
         </instance>
         <branch name="REG_OUT(7:0)">
-            <wire x2="1424" y1="720" y2="832" x1="1424" />
-            <wire x2="1504" y1="832" y2="832" x1="1424" />
             <wire x2="2656" y1="720" y2="720" x1="1424" />
             <wire x2="2656" y1="720" y2="768" x1="2656" />
             <wire x2="3088" y1="768" y2="768" x1="2656" />
             <wire x2="2656" y1="768" y2="1024" x1="2656" />
             <wire x2="2752" y1="1024" y2="1024" x1="2656" />
+            <wire x2="1424" y1="720" y2="800" x1="1424" />
+            <wire x2="1504" y1="800" y2="800" x1="1424" />
             <wire x2="2656" y1="768" y2="768" x1="2480" />
         </branch>
         <branch name="ZERO">
@@ -208,12 +207,10 @@
             <wire x2="1952" y1="832" y2="1040" x1="1952" />
         </branch>
         <branch name="LD_D">
-            <wire x2="816" y1="656" y2="656" x1="368" />
-            <wire x2="832" y1="656" y2="656" x1="816" />
+            <wire x2="832" y1="656" y2="656" x1="368" />
         </branch>
         <branch name="CL_D">
-            <wire x2="816" y1="784" y2="784" x1="368" />
-            <wire x2="832" y1="784" y2="784" x1="816" />
+            <wire x2="832" y1="784" y2="784" x1="368" />
         </branch>
         <branch name="LD_PC">
             <wire x2="1408" y1="1520" y2="1520" x1="512" />
@@ -226,12 +223,12 @@
         </branch>
         <branch name="XLXN_22(7:0)">
             <wire x2="1360" y1="656" y2="656" x1="1216" />
-            <wire x2="1360" y1="656" y2="768" x1="1360" />
-            <wire x2="1504" y1="768" y2="768" x1="1360" />
-            <wire x2="1360" y1="768" y2="1200" x1="1360" />
+            <wire x2="1360" y1="656" y2="896" x1="1360" />
+            <wire x2="1360" y1="896" y2="1200" x1="1360" />
             <wire x2="2272" y1="1200" y2="1200" x1="1360" />
             <wire x2="1360" y1="1200" y2="1456" x1="1360" />
             <wire x2="1408" y1="1456" y2="1456" x1="1360" />
+            <wire x2="1504" y1="896" y2="896" x1="1360" />
         </branch>
         <branch name="XLXN_25(7:0)">
             <wire x2="2064" y1="1456" y2="1456" x1="1856" />
@@ -255,8 +252,7 @@
         </branch>
         <branch name="DORPC">
             <wire x2="2384" y1="1408" y2="1408" x1="2224" />
-            <wire x2="2384" y1="1328" y2="1344" x1="2384" />
-            <wire x2="2384" y1="1344" y2="1408" x1="2384" />
+            <wire x2="2384" y1="1328" y2="1408" x1="2384" />
         </branch>
         <branch name="A(7:0)">
             <wire x2="3312" y1="1248" y2="1248" x1="2480" />
@@ -273,8 +269,9 @@
         <iomarker fontsize="28" x="640" y="464" name="CLK" orien="R180" />
         <iomarker fontsize="28" x="672" y="400" name="CL_AC" orien="R180" />
         <branch name="ADDORSUB">
-            <wire x2="1488" y1="896" y2="896" x1="448" />
-            <wire x2="1504" y1="896" y2="896" x1="1488" />
+            <wire x2="464" y1="896" y2="896" x1="448" />
+            <wire x2="464" y1="896" y2="992" x1="464" />
+            <wire x2="1504" y1="992" y2="992" x1="464" />
         </branch>
         <iomarker fontsize="28" x="448" y="896" name="ADDORSUB" orien="R180" />
         <iomarker fontsize="28" x="2224" y="1408" name="DORPC" orien="R180" />
@@ -291,5 +288,7 @@
         <text style="fontsize:28;fontname:Arial" x="892" y="1136">Instruction Register</text>
         <text style="fontsize:28;fontname:Arial" x="2868" y="896">Reg A Zero?</text>
         <text style="fontsize:28;fontname:Arial" x="2512" y="1952">Instruction</text>
+        <instance x="1504" y="1024" name="XLXI_12" orien="R0">
+        </instance>
     </sheet>
 </drawing>
