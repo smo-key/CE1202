@@ -8,25 +8,17 @@
     <netlist>
         <signal name="XLXN_1(7:0)" />
         <signal name="REG_OUT(7:0)" />
-        <signal name="XLXN_3(7:0)" />
         <signal name="ZERO" />
         <signal name="LD_IR" />
         <signal name="CL_IR" />
         <signal name="D_IN(7:0)" />
-        <signal name="XLXN_10(7:0)" />
-        <signal name="XLXN_11" />
         <signal name="CLK" />
-        <signal name="XLXN_13" />
-        <signal name="XLXN_14" />
         <signal name="LD_D" />
         <signal name="CL_D" />
         <signal name="LD_PC" />
         <signal name="COUNT" />
         <signal name="CL_PC" />
-        <signal name="XLXN_20(7:0)" />
-        <signal name="XLXN_21(7:0)" />
         <signal name="XLXN_22(7:0)" />
-        <signal name="XLXN_23" />
         <signal name="XLXN_25(7:0)" />
         <signal name="IR_OUT(7:0)" />
         <signal name="LD_AC" />
@@ -197,7 +189,7 @@
             <wire x2="832" y1="1392" y2="1392" x1="368" />
         </branch>
         <branch name="D_IN(7:0)">
-            <wire x2="576" y1="848" y2="848" x1="320" />
+            <wire x2="576" y1="848" y2="848" x1="416" />
             <wire x2="832" y1="848" y2="848" x1="576" />
             <wire x2="576" y1="848" y2="1456" x1="576" />
             <wire x2="832" y1="1456" y2="1456" x1="576" />
@@ -216,10 +208,12 @@
             <wire x2="1952" y1="832" y2="1040" x1="1952" />
         </branch>
         <branch name="LD_D">
-            <wire x2="832" y1="656" y2="656" x1="528" />
+            <wire x2="816" y1="656" y2="656" x1="368" />
+            <wire x2="832" y1="656" y2="656" x1="816" />
         </branch>
         <branch name="CL_D">
-            <wire x2="832" y1="784" y2="784" x1="576" />
+            <wire x2="816" y1="784" y2="784" x1="368" />
+            <wire x2="832" y1="784" y2="784" x1="816" />
         </branch>
         <branch name="LD_PC">
             <wire x2="1408" y1="1520" y2="1520" x1="512" />
@@ -250,9 +244,9 @@
             <wire x2="2688" y1="2000" y2="2000" x1="1952" />
         </branch>
         <branch name="LD_AC">
-            <wire x2="1936" y1="288" y2="288" x1="656" />
-            <wire x2="1936" y1="288" y2="768" x1="1936" />
-            <wire x2="2096" y1="768" y2="768" x1="1936" />
+            <wire x2="2080" y1="288" y2="288" x1="672" />
+            <wire x2="2080" y1="288" y2="768" x1="2080" />
+            <wire x2="2096" y1="768" y2="768" x1="2080" />
         </branch>
         <branch name="CL_AC">
             <wire x2="1920" y1="400" y2="400" x1="672" />
@@ -276,16 +270,26 @@
         <iomarker fontsize="28" x="512" y="1520" name="LD_PC" orien="R180" />
         <iomarker fontsize="28" x="368" y="1392" name="CL_IR" orien="R180" />
         <iomarker fontsize="28" x="336" y="1264" name="LD_IR" orien="R180" />
-        <iomarker fontsize="28" x="320" y="848" name="D_IN(7:0)" orien="R180" />
-        <iomarker fontsize="28" x="576" y="784" name="CL_D" orien="R180" />
-        <iomarker fontsize="28" x="528" y="656" name="LD_D" orien="R180" />
         <iomarker fontsize="28" x="640" y="464" name="CLK" orien="R180" />
         <iomarker fontsize="28" x="672" y="400" name="CL_AC" orien="R180" />
-        <iomarker fontsize="28" x="656" y="288" name="LD_AC" orien="R180" />
         <branch name="ADDORSUB">
-            <wire x2="1504" y1="896" y2="896" x1="448" />
+            <wire x2="1488" y1="896" y2="896" x1="448" />
+            <wire x2="1504" y1="896" y2="896" x1="1488" />
         </branch>
         <iomarker fontsize="28" x="448" y="896" name="ADDORSUB" orien="R180" />
         <iomarker fontsize="28" x="2224" y="1408" name="DORPC" orien="R180" />
+        <iomarker fontsize="28" x="416" y="848" name="D_IN(7:0)" orien="R180" />
+        <iomarker fontsize="28" x="368" y="784" name="CL_D" orien="R180" />
+        <iomarker fontsize="28" x="368" y="656" name="LD_D" orien="R180" />
+        <iomarker fontsize="28" x="672" y="288" name="LD_AC" orien="R180" />
+        <text style="fontsize:24;fontname:Arial" x="2172" y="1036">Accumulator Register</text>
+        <text style="fontsize:24;fontname:Arial" x="1540" y="1780">Program Counter</text>
+        <text style="fontsize:28;fontname:Arial" x="876" y="924">Branch (Data) Register</text>
+        <text style="fontsize:28;fontname:Arial" x="1632" y="644">A+B Adder</text>
+        <text style="fontsize:28;fontname:Arial" x="2096" y="1160">Branch Address</text>
+        <text style="fontsize:28;fontname:Arial" x="1980" y="1236">Program Counter Address</text>
+        <text style="fontsize:28;fontname:Arial" x="892" y="1136">Instruction Register</text>
+        <text style="fontsize:28;fontname:Arial" x="2868" y="896">Reg A Zero?</text>
+        <text style="fontsize:28;fontname:Arial" x="2512" y="1952">Instruction</text>
     </sheet>
 </drawing>
