@@ -88,6 +88,11 @@
         <signal name="ADDR(7)" />
         <signal name="ADDR(6)" />
         <signal name="ADDR(5)" />
+        <signal name="XLXN_1" />
+        <signal name="XLXN_2" />
+        <signal name="XLXN_3" />
+        <signal name="XLXN_4" />
+        <signal name="XLXN_5" />
         <port polarity="Input" name="ADDR(7:0)" />
         <port polarity="Output" name="DATA_OUT(7:0)" />
         <blockdef name="rom32x1">
@@ -140,7 +145,7 @@
             <blockpin signalname="ADDR(7)" name="S2" />
         </block>
         <block symbolname="rom32x1" name="XLXI_48">
-            <attr value="01020304" name="INIT">
+            <attr value="aaaaaaaa" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 32 h" />
@@ -153,7 +158,7 @@
             <blockpin signalname="A1(0)" name="O" />
         </block>
         <block symbolname="rom32x1" name="XLXI_47">
-            <attr value="01020304" name="INIT">
+            <attr value="dddddddd" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 32 h" />
@@ -166,7 +171,7 @@
             <blockpin signalname="A1(1)" name="O" />
         </block>
         <block symbolname="rom32x1" name="XLXI_46">
-            <attr value="01020304" name="INIT">
+            <attr value="ffffffff" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 32 h" />
@@ -179,7 +184,7 @@
             <blockpin signalname="A1(2)" name="O" />
         </block>
         <block symbolname="rom32x1" name="XLXI_45">
-            <attr value="01020304" name="INIT">
+            <attr value="ffffffff" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 32 h" />
@@ -192,7 +197,7 @@
             <blockpin signalname="A1(3)" name="O" />
         </block>
         <block symbolname="rom32x1" name="XLXI_44">
-            <attr value="01020304" name="INIT">
+            <attr value="55555555" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 32 h" />
@@ -205,7 +210,7 @@
             <blockpin signalname="A1(4)" name="O" />
         </block>
         <block symbolname="rom32x1" name="XLXI_43">
-            <attr value="01020304" name="INIT">
+            <attr value="eeeeeeee" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 32 h" />
@@ -218,7 +223,7 @@
             <blockpin signalname="A1(5)" name="O" />
         </block>
         <block symbolname="rom32x1" name="XLXI_42">
-            <attr value="01020304" name="INIT">
+            <attr value="99999999" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 32 h" />
@@ -231,7 +236,7 @@
             <blockpin signalname="A1(6)" name="O" />
         </block>
         <block symbolname="rom32x1" name="XLXI_9">
-            <attr value="01020304" name="INIT">
+            <attr value="ffffffff" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 32 h" />
@@ -244,7 +249,7 @@
             <blockpin signalname="A1(7)" name="O" />
         </block>
         <block symbolname="rom32x1" name="XLXI_65">
-            <attr value="01020304" name="INIT">
+            <attr value="66666666" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 32 h" />
@@ -257,7 +262,7 @@
             <blockpin signalname="A2(0)" name="O" />
         </block>
         <block symbolname="rom32x1" name="XLXI_66">
-            <attr value="01020304" name="INIT">
+            <attr value="dddddddd" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 32 h" />
@@ -270,7 +275,7 @@
             <blockpin signalname="A2(1)" name="O" />
         </block>
         <block symbolname="rom32x1" name="XLXI_67">
-            <attr value="01020304" name="INIT">
+            <attr value="bbbbbbbb" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 32 h" />
@@ -283,7 +288,7 @@
             <blockpin signalname="A2(2)" name="O" />
         </block>
         <block symbolname="rom32x1" name="XLXI_68">
-            <attr value="01020304" name="INIT">
+            <attr value="ffffffff" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 32 h" />
@@ -296,7 +301,7 @@
             <blockpin signalname="A2(3)" name="O" />
         </block>
         <block symbolname="rom32x1" name="XLXI_69">
-            <attr value="01020304" name="INIT">
+            <attr value="11111111" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 32 h" />
@@ -309,7 +314,7 @@
             <blockpin signalname="A2(4)" name="O" />
         </block>
         <block symbolname="rom32x1" name="XLXI_70">
-            <attr value="01020304" name="INIT">
+            <attr value="ffffffff" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 32 h" />
@@ -322,7 +327,7 @@
             <blockpin signalname="A2(5)" name="O" />
         </block>
         <block symbolname="rom32x1" name="XLXI_71">
-            <attr value="01020304" name="INIT">
+            <attr value="77777777" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 32 h" />
@@ -335,7 +340,7 @@
             <blockpin signalname="A2(6)" name="O" />
         </block>
         <block symbolname="rom32x1" name="XLXI_72">
-            <attr value="01020304" name="INIT">
+            <attr value="ffffffff" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 32 h" />
@@ -1022,8 +1027,9 @@
         </branch>
         <branch name="A1(4)">
             <attrtext style="alignment:SOFT-BCENTER" attrname="Name" x="3328" y="144" type="branch" />
-            <wire x2="3328" y1="144" y2="144" x1="3280" />
+            <wire x2="3328" y1="160" y2="160" x1="3280" />
             <wire x2="3360" y1="144" y2="144" x1="3328" />
+            <wire x2="3328" y1="144" y2="160" x1="3328" />
             <wire x2="3360" y1="112" y2="144" x1="3360" />
         </branch>
         <branch name="A1(6)">
@@ -1122,8 +1128,9 @@
         </branch>
         <branch name="A3(0)">
             <attrtext style="alignment:SOFT-BCENTER" attrname="Name" x="6064" y="1488" type="branch" />
-            <wire x2="6064" y1="1488" y2="1488" x1="6048" />
+            <wire x2="6064" y1="1504" y2="1504" x1="5984" />
             <wire x2="6112" y1="1488" y2="1488" x1="6064" />
+            <wire x2="6064" y1="1488" y2="1504" x1="6064" />
             <wire x2="6112" y1="1456" y2="1488" x1="6112" />
         </branch>
         <branch name="A3(1)">
@@ -1243,15 +1250,12 @@
             <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="INIT" x="-160" y="-468" type="instance" />
         </instance>
         <instance x="5072" y="528" name="XLXI_47" orien="R0">
-            <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="INIT" x="-144" y="-468" type="instance" />
+            <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="INIT" x="-128" y="-468" type="instance" />
         </instance>
         <instance x="4320" y="528" name="XLXI_46" orien="R0">
             <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="INIT" x="-128" y="-468" type="instance" />
         </instance>
         <instance x="3632" y="528" name="XLXI_45" orien="R0">
-            <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="INIT" x="-128" y="-468" type="instance" />
-        </instance>
-        <instance x="2896" y="528" name="XLXI_44" orien="R0">
             <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="INIT" x="-128" y="-468" type="instance" />
         </instance>
         <instance x="2208" y="528" name="XLXI_43" orien="R0">
@@ -1303,9 +1307,6 @@
         <bustap x2="2560" y1="1360" y2="1456" x1="2560" />
         <bustap x2="1856" y1="1360" y2="1456" x1="1856" />
         <bustap x2="1152" y1="1360" y2="1456" x1="1152" />
-        <instance x="5664" y="1872" name="XLXI_73" orien="R0">
-            <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="INIT" x="0" y="-532" type="instance" />
-        </instance>
         <instance x="4976" y="1872" name="XLXI_74" orien="R0">
             <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="INIT" x="0" y="-532" type="instance" />
         </instance>
@@ -1322,9 +1323,6 @@
             <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="INIT" x="0" y="-532" type="instance" />
         </instance>
         <instance x="1376" y="1872" name="XLXI_79" orien="R0">
-            <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="INIT" x="0" y="-532" type="instance" />
-        </instance>
-        <instance x="688" y="1872" name="XLXI_80" orien="R0">
             <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="INIT" x="0" y="-532" type="instance" />
         </instance>
         <bustap x2="6032" y1="2032" y2="2128" x1="6032" />
@@ -1808,7 +1806,7 @@
             <wire x2="3392" y1="2000" y2="2000" x1="2656" />
             <wire x2="4080" y1="2000" y2="2000" x1="3392" />
             <wire x2="4832" y1="2000" y2="2000" x1="4080" />
-            <wire x2="5520" y1="2000" y2="2000" x1="4832" />
+            <wire x2="5424" y1="2000" y2="2000" x1="4832" />
             <wire x2="544" y1="2000" y2="2160" x1="544" />
             <wire x2="560" y1="1488" y2="1488" x1="544" />
             <wire x2="688" y1="1488" y2="1488" x1="560" />
@@ -1880,8 +1878,8 @@
             <wire x2="2656" y1="1488" y2="2000" x1="2656" />
             <wire x2="2816" y1="816" y2="816" x1="2672" />
             <wire x2="2672" y1="816" y2="1328" x1="2672" />
-            <wire x2="2896" y1="144" y2="144" x1="2752" />
-            <wire x2="2752" y1="144" y2="656" x1="2752" />
+            <wire x2="2896" y1="160" y2="160" x1="2752" />
+            <wire x2="2752" y1="160" y2="656" x1="2752" />
             <wire x2="3280" y1="4864" y2="4864" x1="3136" />
             <wire x2="3136" y1="4864" y2="5376" x1="3136" />
             <wire x2="3360" y1="4192" y2="4192" x1="3216" />
@@ -1936,12 +1934,12 @@
             <wire x2="5344" y1="4192" y2="4704" x1="5344" />
             <wire x2="5504" y1="3520" y2="3520" x1="5360" />
             <wire x2="5360" y1="3520" y2="4032" x1="5360" />
+            <wire x2="5424" y1="1504" y2="2000" x1="5424" />
+            <wire x2="5600" y1="1504" y2="1504" x1="5424" />
             <wire x2="5584" y1="2160" y2="2160" x1="5440" />
             <wire x2="5440" y1="2160" y2="2672" x1="5440" />
             <wire x2="5584" y1="2848" y2="2848" x1="5440" />
             <wire x2="5440" y1="2848" y2="3360" x1="5440" />
-            <wire x2="5664" y1="1488" y2="1488" x1="5520" />
-            <wire x2="5520" y1="1488" y2="2000" x1="5520" />
             <wire x2="5680" y1="816" y2="816" x1="5536" />
             <wire x2="5536" y1="816" y2="1328" x1="5536" />
             <wire x2="5760" y1="144" y2="144" x1="5616" />
@@ -2011,7 +2009,7 @@
             <wire x2="3408" y1="1984" y2="1984" x1="2672" />
             <wire x2="4096" y1="1984" y2="1984" x1="3408" />
             <wire x2="4848" y1="1984" y2="1984" x1="4096" />
-            <wire x2="5536" y1="1984" y2="1984" x1="4848" />
+            <wire x2="5408" y1="1984" y2="1984" x1="4848" />
             <wire x2="560" y1="1984" y2="2224" x1="560" />
             <wire x2="640" y1="1552" y2="1552" x1="560" />
             <wire x2="688" y1="1552" y2="1552" x1="640" />
@@ -2085,8 +2083,8 @@
             <wire x2="2672" y1="1552" y2="1984" x1="2672" />
             <wire x2="2816" y1="880" y2="880" x1="2688" />
             <wire x2="2688" y1="880" y2="1312" x1="2688" />
-            <wire x2="2896" y1="208" y2="208" x1="2768" />
-            <wire x2="2768" y1="208" y2="640" x1="2768" />
+            <wire x2="2896" y1="224" y2="224" x1="2768" />
+            <wire x2="2768" y1="224" y2="640" x1="2768" />
             <wire x2="3280" y1="4928" y2="4928" x1="3152" />
             <wire x2="3152" y1="4928" y2="5360" x1="3152" />
             <wire x2="3360" y1="4256" y2="4256" x1="3232" />
@@ -2141,12 +2139,12 @@
             <wire x2="5360" y1="4256" y2="4688" x1="5360" />
             <wire x2="5504" y1="3584" y2="3584" x1="5376" />
             <wire x2="5376" y1="3584" y2="4016" x1="5376" />
+            <wire x2="5408" y1="1568" y2="1984" x1="5408" />
+            <wire x2="5600" y1="1568" y2="1568" x1="5408" />
             <wire x2="5584" y1="2224" y2="2224" x1="5456" />
             <wire x2="5456" y1="2224" y2="2656" x1="5456" />
             <wire x2="5584" y1="2912" y2="2912" x1="5456" />
             <wire x2="5456" y1="2912" y2="3344" x1="5456" />
-            <wire x2="5664" y1="1552" y2="1552" x1="5536" />
-            <wire x2="5536" y1="1552" y2="1984" x1="5536" />
             <wire x2="5680" y1="880" y2="880" x1="5552" />
             <wire x2="5552" y1="880" y2="1312" x1="5552" />
             <wire x2="5760" y1="208" y2="208" x1="5632" />
@@ -2218,7 +2216,7 @@
             <wire x2="3424" y1="1952" y2="1952" x1="2688" />
             <wire x2="4112" y1="1952" y2="1952" x1="3424" />
             <wire x2="4864" y1="1952" y2="1952" x1="4112" />
-            <wire x2="5552" y1="1952" y2="1952" x1="4864" />
+            <wire x2="5392" y1="1952" y2="1952" x1="4864" />
             <wire x2="576" y1="1952" y2="2288" x1="576" />
             <wire x2="672" y1="1616" y2="1616" x1="576" />
             <wire x2="688" y1="1616" y2="1616" x1="672" />
@@ -2292,8 +2290,8 @@
             <wire x2="2688" y1="1616" y2="1952" x1="2688" />
             <wire x2="2816" y1="944" y2="944" x1="2704" />
             <wire x2="2704" y1="944" y2="1280" x1="2704" />
-            <wire x2="2896" y1="272" y2="272" x1="2784" />
-            <wire x2="2784" y1="272" y2="608" x1="2784" />
+            <wire x2="2896" y1="288" y2="288" x1="2784" />
+            <wire x2="2784" y1="288" y2="608" x1="2784" />
             <wire x2="3280" y1="4992" y2="4992" x1="3168" />
             <wire x2="3168" y1="4992" y2="5328" x1="3168" />
             <wire x2="3360" y1="4320" y2="4320" x1="3248" />
@@ -2346,14 +2344,14 @@
             <wire x2="5296" y1="4992" y2="5328" x1="5296" />
             <wire x2="5488" y1="4320" y2="4320" x1="5376" />
             <wire x2="5376" y1="4320" y2="4656" x1="5376" />
+            <wire x2="5392" y1="1632" y2="1952" x1="5392" />
+            <wire x2="5600" y1="1632" y2="1632" x1="5392" />
             <wire x2="5504" y1="3648" y2="3648" x1="5392" />
             <wire x2="5392" y1="3648" y2="3984" x1="5392" />
             <wire x2="5584" y1="2288" y2="2288" x1="5472" />
             <wire x2="5472" y1="2288" y2="2624" x1="5472" />
             <wire x2="5584" y1="2976" y2="2976" x1="5472" />
             <wire x2="5472" y1="2976" y2="3312" x1="5472" />
-            <wire x2="5664" y1="1616" y2="1616" x1="5552" />
-            <wire x2="5552" y1="1616" y2="1952" x1="5552" />
             <wire x2="5680" y1="944" y2="944" x1="5568" />
             <wire x2="5568" y1="944" y2="1280" x1="5568" />
             <wire x2="5760" y1="272" y2="272" x1="5648" />
@@ -2374,7 +2372,7 @@
             <wire x2="3456" y1="1888" y2="1888" x1="2720" />
             <wire x2="4144" y1="1888" y2="1888" x1="3456" />
             <wire x2="4896" y1="1888" y2="1888" x1="4144" />
-            <wire x2="5584" y1="1888" y2="1888" x1="4896" />
+            <wire x2="5456" y1="1888" y2="1888" x1="4896" />
             <wire x2="688" y1="1744" y2="1744" x1="608" />
             <wire x2="240" y1="1744" y2="2416" x1="240" />
             <wire x2="528" y1="2416" y2="2416" x1="240" />
@@ -2501,8 +2499,8 @@
             <wire x2="2720" y1="1744" y2="1888" x1="2720" />
             <wire x2="2816" y1="1072" y2="1072" x1="2736" />
             <wire x2="2736" y1="1072" y2="1216" x1="2736" />
-            <wire x2="2896" y1="400" y2="400" x1="2816" />
-            <wire x2="2816" y1="400" y2="544" x1="2816" />
+            <wire x2="2896" y1="416" y2="416" x1="2816" />
+            <wire x2="2816" y1="416" y2="544" x1="2816" />
             <wire x2="3280" y1="5120" y2="5120" x1="3200" />
             <wire x2="3200" y1="5120" y2="5264" x1="3200" />
             <wire x2="3360" y1="4448" y2="4448" x1="3280" />
@@ -2557,12 +2555,12 @@
             <wire x2="5408" y1="4448" y2="4592" x1="5408" />
             <wire x2="5504" y1="3776" y2="3776" x1="5424" />
             <wire x2="5424" y1="3776" y2="3920" x1="5424" />
+            <wire x2="5456" y1="1760" y2="1888" x1="5456" />
+            <wire x2="5600" y1="1760" y2="1760" x1="5456" />
             <wire x2="5584" y1="2416" y2="2416" x1="5504" />
             <wire x2="5504" y1="2416" y2="2560" x1="5504" />
             <wire x2="5584" y1="3104" y2="3104" x1="5504" />
             <wire x2="5504" y1="3104" y2="3248" x1="5504" />
-            <wire x2="5664" y1="1744" y2="1744" x1="5584" />
-            <wire x2="5584" y1="1744" y2="1888" x1="5584" />
             <wire x2="5680" y1="1072" y2="1072" x1="5600" />
             <wire x2="5600" y1="1072" y2="1216" x1="5600" />
             <wire x2="5760" y1="400" y2="400" x1="5680" />
@@ -2581,7 +2579,7 @@
             <wire x2="3440" y1="1920" y2="1920" x1="2704" />
             <wire x2="4128" y1="1920" y2="1920" x1="3440" />
             <wire x2="4880" y1="1920" y2="1920" x1="4128" />
-            <wire x2="5568" y1="1920" y2="1920" x1="4880" />
+            <wire x2="5376" y1="1920" y2="1920" x1="4880" />
             <wire x2="688" y1="1680" y2="1680" x1="592" />
             <wire x2="224" y1="1680" y2="2352" x1="224" />
             <wire x2="512" y1="2352" y2="2352" x1="224" />
@@ -2709,8 +2707,8 @@
             <wire x2="2704" y1="1680" y2="1920" x1="2704" />
             <wire x2="2816" y1="1008" y2="1008" x1="2720" />
             <wire x2="2720" y1="1008" y2="1248" x1="2720" />
-            <wire x2="2896" y1="336" y2="336" x1="2800" />
-            <wire x2="2800" y1="336" y2="576" x1="2800" />
+            <wire x2="2896" y1="352" y2="352" x1="2800" />
+            <wire x2="2800" y1="352" y2="576" x1="2800" />
             <wire x2="3280" y1="5056" y2="5056" x1="3184" />
             <wire x2="3184" y1="5056" y2="5296" x1="3184" />
             <wire x2="3360" y1="4384" y2="4384" x1="3264" />
@@ -2761,6 +2759,8 @@
             <wire x2="4976" y1="336" y2="576" x1="4976" />
             <wire x2="5408" y1="5056" y2="5056" x1="5312" />
             <wire x2="5312" y1="5056" y2="5296" x1="5312" />
+            <wire x2="5376" y1="1696" y2="1920" x1="5376" />
+            <wire x2="5600" y1="1696" y2="1696" x1="5376" />
             <wire x2="5488" y1="4384" y2="4384" x1="5392" />
             <wire x2="5392" y1="4384" y2="4624" x1="5392" />
             <wire x2="5504" y1="3712" y2="3712" x1="5408" />
@@ -2769,8 +2769,6 @@
             <wire x2="5488" y1="2352" y2="2592" x1="5488" />
             <wire x2="5584" y1="3040" y2="3040" x1="5488" />
             <wire x2="5488" y1="3040" y2="3280" x1="5488" />
-            <wire x2="5664" y1="1680" y2="1680" x1="5568" />
-            <wire x2="5568" y1="1680" y2="1920" x1="5568" />
             <wire x2="5680" y1="1008" y2="1008" x1="5584" />
             <wire x2="5584" y1="1008" y2="1248" x1="5584" />
             <wire x2="5760" y1="336" y2="336" x1="5664" />
@@ -2830,5 +2828,14 @@
             <wire x2="6944" y1="1088" y2="1088" x1="6688" />
             <wire x2="6944" y1="896" y2="1088" x1="6944" />
         </branch>
+        <instance x="688" y="1872" name="XLXI_80" orien="R0">
+            <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="INIT" x="0" y="-532" type="instance" />
+        </instance>
+        <instance x="2896" y="544" name="XLXI_44" orien="R0">
+            <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="INIT" x="-128" y="-468" type="instance" />
+        </instance>
+        <instance x="5600" y="1888" name="XLXI_73" orien="R0">
+            <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="INIT" x="0" y="-532" type="instance" />
+        </instance>
     </sheet>
 </drawing>
