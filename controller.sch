@@ -43,9 +43,8 @@
         <signal name="XLXN_74" />
         <signal name="DORPC" />
         <signal name="LD_D" />
-        <signal name="XLXN_81" />
         <signal name="XLXN_82" />
-        <signal name="XLXN_83" />
+        <signal name="OVERFLOW" />
         <port polarity="Input" name="CLK" />
         <port polarity="Input" name="CLR" />
         <port polarity="Input" name="RESET" />
@@ -71,19 +70,7 @@
         <port polarity="Output" name="RORW" />
         <port polarity="Output" name="DORPC" />
         <port polarity="Output" name="LD_D" />
-        <blockdef name="control">
-            <timestamp>2017-3-23T21:34:58</timestamp>
-            <rect width="256" x="64" y="-384" height="384" />
-            <line x2="0" y1="-352" y2="-352" x1="64" />
-            <line x2="0" y1="-192" y2="-192" x1="64" />
-            <line x2="0" y1="-32" y2="-32" x1="64" />
-            <line x2="384" y1="-352" y2="-352" x1="320" />
-            <line x2="384" y1="-288" y2="-288" x1="320" />
-            <line x2="384" y1="-224" y2="-224" x1="320" />
-            <line x2="384" y1="-160" y2="-160" x1="320" />
-            <line x2="384" y1="-96" y2="-96" x1="320" />
-            <line x2="384" y1="-32" y2="-32" x1="320" />
-        </blockdef>
+        <port polarity="Input" name="OVERFLOW" />
         <blockdef name="inv">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-32" y2="-32" x1="0" />
@@ -150,17 +137,20 @@
             <arc ex="144" ey="-176" sx="144" sy="-80" r="48" cx="144" cy="-128" />
             <line x2="64" y1="-64" y2="-192" x1="64" />
         </blockdef>
-        <block symbolname="control" name="XLXI_1">
-            <blockpin signalname="CLK" name="CLK" />
-            <blockpin signalname="CLR" name="CLR" />
-            <blockpin signalname="RESET" name="RESET" />
-            <blockpin signalname="S0" name="S0" />
-            <blockpin signalname="S1" name="S1" />
-            <blockpin signalname="S2" name="S2" />
-            <blockpin signalname="S3" name="S3" />
-            <blockpin signalname="S4" name="S4" />
-            <blockpin signalname="S5" name="S5" />
-        </block>
+        <blockdef name="control">
+            <timestamp>2017-4-12T16:31:36</timestamp>
+            <line x2="0" y1="32" y2="32" x1="64" />
+            <line x2="0" y1="-352" y2="-352" x1="64" />
+            <line x2="0" y1="-192" y2="-192" x1="64" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="384" y1="-352" y2="-352" x1="320" />
+            <line x2="384" y1="-288" y2="-288" x1="320" />
+            <line x2="384" y1="-224" y2="-224" x1="320" />
+            <line x2="384" y1="-160" y2="-160" x1="320" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+            <rect width="256" x="64" y="-384" height="448" />
+        </blockdef>
         <block symbolname="inv" name="XLXI_2">
             <blockpin signalname="S1" name="I" />
             <blockpin signalname="XLXN_5" name="O" />
@@ -277,24 +267,36 @@
             <blockpin signalname="XLXN_82" name="I1" />
             <blockpin signalname="RORW" name="O" />
         </block>
+        <block symbolname="control" name="XLXI_34">
+            <blockpin signalname="CLK" name="CLK" />
+            <blockpin signalname="CLR" name="CLR" />
+            <blockpin signalname="RESET" name="RESET" />
+            <blockpin signalname="S0" name="S0" />
+            <blockpin signalname="S1" name="S1" />
+            <blockpin signalname="S2" name="S2" />
+            <blockpin signalname="S3" name="S3" />
+            <blockpin signalname="S4" name="S4" />
+            <blockpin signalname="S5" name="S5" />
+            <blockpin signalname="OVERFLOW" name="OVERFLOW" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
-        <instance x="640" y="672" name="XLXI_1" orien="R0">
-        </instance>
         <branch name="CLK">
-            <wire x2="640" y1="320" y2="320" x1="240" />
+            <wire x2="256" y1="320" y2="320" x1="240" />
+            <wire x2="624" y1="320" y2="320" x1="256" />
+            <wire x2="640" y1="320" y2="320" x1="624" />
         </branch>
         <branch name="CLR">
             <wire x2="560" y1="480" y2="480" x1="240" />
-            <wire x2="640" y1="480" y2="480" x1="560" />
             <wire x2="560" y1="480" y2="720" x1="560" />
             <wire x2="1088" y1="720" y2="720" x1="560" />
             <wire x2="1088" y1="720" y2="1296" x1="1088" />
             <wire x2="1728" y1="1296" y2="1296" x1="1088" />
+            <wire x2="624" y1="480" y2="480" x1="560" />
+            <wire x2="640" y1="480" y2="480" x1="624" />
         </branch>
         <branch name="RESET">
             <wire x2="480" y1="640" y2="640" x1="256" />
-            <wire x2="640" y1="640" y2="640" x1="480" />
             <wire x2="480" y1="640" y2="736" x1="480" />
             <wire x2="1104" y1="736" y2="736" x1="480" />
             <wire x2="1104" y1="736" y2="1072" x1="1104" />
@@ -304,6 +306,8 @@
             <wire x2="2032" y1="1200" y2="1200" x1="1728" />
             <wire x2="480" y1="736" y2="2432" x1="480" />
             <wire x2="2032" y1="2432" y2="2432" x1="480" />
+            <wire x2="624" y1="640" y2="640" x1="480" />
+            <wire x2="640" y1="640" y2="640" x1="624" />
         </branch>
         <iomarker fontsize="28" x="240" y="320" name="CLK" orien="R180" />
         <iomarker fontsize="28" x="240" y="480" name="CLR" orien="R180" />
@@ -448,7 +452,8 @@
         </branch>
         <branch name="S5">
             <wire x2="1200" y1="640" y2="640" x1="1024" />
-            <wire x2="1200" y1="192" y2="640" x1="1200" />
+            <wire x2="1200" y1="192" y2="208" x1="1200" />
+            <wire x2="1200" y1="208" y2="640" x1="1200" />
         </branch>
         <iomarker fontsize="28" x="1168" y="192" name="S4" orien="R270" />
         <iomarker fontsize="28" x="1136" y="192" name="S3" orien="R270" />
@@ -533,5 +538,11 @@
         <branch name="XLXN_82">
             <wire x2="1984" y1="2160" y2="2160" x1="1920" />
         </branch>
+        <instance x="640" y="672" name="XLXI_34" orien="R0">
+        </instance>
+        <branch name="OVERFLOW">
+            <wire x2="640" y1="704" y2="704" x1="288" />
+        </branch>
+        <iomarker fontsize="28" x="288" y="704" name="OVERFLOW" orien="R180" />
     </sheet>
 </drawing>

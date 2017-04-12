@@ -1,8 +1,8 @@
 //CONTROL.v
 `timescale 1s/1s
-module control(CLK,CLR,RESET,S0,S1,S2,S3,S4,S5);
+module control(CLK,CLR,RESET,OVERFLOW,S0,S1,S2,S3,S4,S5);
 	input CLK;
-	input CLR,RESET;
+	input CLR,RESET, OVERFLOW;
 	output S0,S1,S2,S3,S4,S5;
 	reg S0,next_S0,S1,next_S1,S2,next_S2,S3,next_S3,S4,next_S4,S5,next_S5;
 	reg
@@ -29,7 +29,7 @@ module control(CLK,CLR,RESET,S0,S1,S2,S3,S4,S5);
 		if ( RESET ) next_STATE0=1;
 		else next_STATE0=0;
 		
-		if ( ~RESET & STATE0 | ~RESET & STATE5 ) next_STATE1=1;
+		if ( ~RESET & STATE0 & OVERFLOW| ~RESET & STATE5 ) next_STATE1=1;
 		else next_STATE1=0;
 		
 		if ( ~RESET & STATE1 ) next_STATE2=1;

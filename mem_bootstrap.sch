@@ -18,10 +18,9 @@
         <signal name="CNT_EN" />
         <signal name="CLK" />
         <signal name="RESET_CNT" />
-        <signal name="XLXN_13" />
         <signal name="WRITE_EN" />
-        <signal name="XLXN_16" />
         <signal name="MUXControl" />
+        <signal name="OVERFLOW" />
         <port polarity="Input" name="ProcAddr(7:0)" />
         <port polarity="Input" name="ProcDR(7:0)" />
         <port polarity="Output" name="DATA(7:0)" />
@@ -30,6 +29,7 @@
         <port polarity="Input" name="RESET_CNT" />
         <port polarity="Input" name="WRITE_EN" />
         <port polarity="Input" name="MUXControl" />
+        <port polarity="Output" name="OVERFLOW" />
         <blockdef name="RAM_array">
             <timestamp>2017-4-4T20:45:50</timestamp>
             <rect width="256" x="64" y="-256" height="256" />
@@ -82,6 +82,13 @@
             <line x2="64" y1="-64" y2="-80" x1="64" />
             <line x2="64" y1="-128" y2="-96" x1="64" />
         </blockdef>
+        <blockdef name="mem_read">
+            <timestamp>2017-4-12T16:4:41</timestamp>
+            <rect width="256" x="64" y="-64" height="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+        </blockdef>
         <block symbolname="RAM_array" name="XLXI_1">
             <blockpin signalname="XLXN_6(7:0)" name="ADDR(7:0)" />
             <blockpin signalname="CLK" name="CLK" />
@@ -118,6 +125,10 @@
         </block>
         <block symbolname="gnd" name="XLXI_7">
             <blockpin signalname="XLXN_9" name="G" />
+        </block>
+        <block symbolname="mem_read" name="XLXI_8">
+            <blockpin signalname="XLXN_6(7:0)" name="Input(7:0)" />
+            <blockpin signalname="OVERFLOW" name="MEM_READ" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -162,6 +173,8 @@
         </branch>
         <branch name="XLXN_6(7:0)">
             <wire x2="2160" y1="1040" y2="1040" x1="2048" />
+            <wire x2="2160" y1="1040" y2="1232" x1="2160" />
+            <wire x2="2400" y1="1232" y2="1232" x1="2160" />
             <wire x2="2160" y1="928" y2="1040" x1="2160" />
             <wire x2="2272" y1="928" y2="928" x1="2160" />
         </branch>
@@ -204,15 +217,20 @@
         <iomarker fontsize="28" x="2272" y="1104" name="WRITE_EN" orien="R0" />
         <iomarker fontsize="28" x="2768" y="800" name="DATA(7:0)" orien="R0" />
         <branch name="MUXControl">
-            <wire x2="1920" y1="944" y2="944" x1="1792" />
-            <wire x2="1792" y1="944" y2="1120" x1="1792" />
-            <wire x2="1792" y1="1120" y2="1136" x1="1792" />
-            <wire x2="1792" y1="1136" y2="1328" x1="1792" />
-            <wire x2="2096" y1="1328" y2="1328" x1="1792" />
-            <wire x2="1952" y1="1136" y2="1136" x1="1792" />
+            <wire x2="1920" y1="944" y2="944" x1="1808" />
+            <wire x2="1808" y1="944" y2="1136" x1="1808" />
+            <wire x2="1808" y1="1136" y2="1328" x1="1808" />
+            <wire x2="2096" y1="1328" y2="1328" x1="1808" />
+            <wire x2="1952" y1="1136" y2="1136" x1="1808" />
             <wire x2="1920" y1="880" y2="944" x1="1920" />
             <wire x2="1952" y1="1120" y2="1136" x1="1952" />
         </branch>
         <iomarker fontsize="28" x="2096" y="1328" name="MUXControl" orien="R0" />
+        <instance x="2400" y="1264" name="XLXI_8" orien="R0">
+        </instance>
+        <branch name="OVERFLOW">
+            <wire x2="2896" y1="1232" y2="1232" x1="2784" />
+        </branch>
+        <iomarker fontsize="28" x="2896" y="1232" name="OVERFLOW" orien="R0" />
     </sheet>
 </drawing>

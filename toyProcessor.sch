@@ -26,7 +26,6 @@
         <signal name="RORW" />
         <signal name="XLXN_20" />
         <signal name="MEM_EN" />
-        <signal name="XLXN_22" />
         <signal name="XLXN_23" />
         <signal name="XLXN_24" />
         <signal name="ADD(7:0)" />
@@ -36,6 +35,7 @@
         <signal name="IR(1)" />
         <signal name="IR(3)" />
         <signal name="IR(4)" />
+        <signal name="OVERFLOW" />
         <port polarity="Input" name="CLK" />
         <port polarity="Input" name="RESET" />
         <port polarity="Output" name="S0" />
@@ -49,9 +49,10 @@
         <port polarity="Output" name="RORW" />
         <port polarity="Output" name="MEM_EN" />
         <port polarity="Output" name="ADD(7:0)" />
+        <port polarity="Input" name="OVERFLOW" />
         <blockdef name="controller">
-            <timestamp>2017-3-29T15:42:35</timestamp>
-            <rect width="256" x="64" y="-1088" height="1088" />
+            <timestamp>2017-4-12T16:32:55</timestamp>
+            <line x2="0" y1="32" y2="32" x1="64" />
             <line x2="0" y1="-1056" y2="-1056" x1="64" />
             <line x2="0" y1="-912" y2="-912" x1="64" />
             <line x2="0" y1="-768" y2="-768" x1="64" />
@@ -77,6 +78,7 @@
             <line x2="384" y1="-160" y2="-160" x1="320" />
             <line x2="384" y1="-96" y2="-96" x1="320" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
+            <rect width="256" x="64" y="-1088" height="1152" />
         </blockdef>
         <blockdef name="datapath_lab">
             <timestamp>2017-3-29T15:42:23</timestamp>
@@ -129,6 +131,7 @@
             <blockpin signalname="RORW" name="RORW" />
             <blockpin signalname="XLXN_18" name="DORPC" />
             <blockpin signalname="XLXN_14" name="LD_D" />
+            <blockpin signalname="OVERFLOW" name="OVERFLOW" />
         </block>
         <block symbolname="datapath_lab" name="XLXI_2">
             <blockpin signalname="XLXN_17" name="LD_IR" />
@@ -316,5 +319,13 @@
             <wire x2="336" y1="1616" y2="1632" x1="336" />
             <wire x2="448" y1="1616" y2="1616" x1="336" />
         </branch>
+        <branch name="OVERFLOW">
+            <wire x2="448" y1="2288" y2="2288" x1="208" />
+            <wire x2="448" y1="1696" y2="1696" x1="432" />
+            <wire x2="432" y1="1696" y2="1808" x1="432" />
+            <wire x2="448" y1="1808" y2="1808" x1="432" />
+            <wire x2="448" y1="1808" y2="2288" x1="448" />
+        </branch>
+        <iomarker fontsize="28" x="208" y="2288" name="OVERFLOW" orien="R180" />
     </sheet>
 </drawing>
