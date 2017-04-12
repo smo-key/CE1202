@@ -8,6 +8,7 @@ module toyProcessor_toyProcessor_sch_tb();
    reg CLK=0;
    reg RESET = 1;
    reg [7:0] D_IN=0;
+	reg OVERFLOW=0;
 
 // Output
    wire S0;
@@ -53,8 +54,10 @@ module toyProcessor_toyProcessor_sch_tb();
 // Initialize Inputs
    initial begin
  // ------------- Current Time: 135ns
- #135;
+ #200;
  RESET = 1'b0;
+ #400;
+ OVERFLOW = 1;
  // -------------------------------------
  // ------------- Current Time: 235ns
  #100;

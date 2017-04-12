@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="mem_bootstrap">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2017-4-12T16:37:38</timestamp>
+    <timestamp>2017-4-12T20:57:28</timestamp>
     <pin polarity="Input" x="0" y="-416" name="ProcAddr(7:0)" />
     <pin polarity="Input" x="0" y="-352" name="ProcDR(7:0)" />
     <pin polarity="Input" x="0" y="-288" name="CNT_EN" />

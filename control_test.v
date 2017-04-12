@@ -27,9 +27,9 @@ module control_test;
  reg CLK = 1'b0;
  reg CLR = 1'b0;
  reg RESET = 1'b0;
+ reg OVERFLOW = 0;
  wire S0;
- wire S1;
-      
+ wire S1;   
  wire S2;
  wire S3;
  wire S4;
@@ -56,15 +56,20 @@ module control_test;
  .S2(S2),
  .S3(S3),
  .S4(S4),
- .S5(S5));
+ .S5(S5),
+ .OVERFLOW(OVERFLOW)
+ );
  initial begin
  // ------------- Current Time: 100ns
  #100;
  RESET = 1'b1;
+
  // -------------------------------------
  // ------------- Current Time: 300ns
  #200;
  RESET = 1'b0;
+  #300;
+  OVERFLOW = 1;
  // -------------------------------------
  // ------------- Current Time: 900ns
  #750;

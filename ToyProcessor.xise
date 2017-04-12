@@ -16,7 +16,7 @@
 
   <files>
     <file xil_pn:name="test_zero.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="9"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="test_zero_vtest.v" xil_pn:type="FILE_VERILOG">
@@ -26,7 +26,7 @@
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="2"/>
     </file>
     <file xil_pn:name="mux_2to1.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="1"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="full_adder_test.v" xil_pn:type="FILE_VERILOG">
@@ -40,7 +40,7 @@
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="mux_2to1_8bit.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="4"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="mux_2to1_8bit_vtest.v" xil_pn:type="FILE_VERILOG">
@@ -52,11 +52,11 @@
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="full_adder.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="6"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="full_adder_8bit.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="11"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="cla_8bit.sch" xil_pn:type="FILE_SCHEMATIC">
@@ -259,7 +259,7 @@
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="register_8bit.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="3"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="register_test.v" xil_pn:type="FILE_VERILOG">
@@ -269,19 +269,19 @@
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="279"/>
     </file>
     <file xil_pn:name="ha.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="2"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="ha_8bit.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="5"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="lab_counter.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="10"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="datapath_lab.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="17"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="counter_test.v" xil_pn:type="FILE_VERILOG">
@@ -291,7 +291,7 @@
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="297"/>
     </file>
     <file xil_pn:name="Control.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="12"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="1"/>
     </file>
     <file xil_pn:name="control_test.v" xil_pn:type="FILE_VERILOG">
@@ -301,7 +301,7 @@
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="310"/>
     </file>
     <file xil_pn:name="controller.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="18"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="Controller_test.v" xil_pn:type="FILE_VERILOG">
@@ -311,7 +311,7 @@
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="317"/>
     </file>
     <file xil_pn:name="toyProcessor.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="19"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="toy_test.v" xil_pn:type="FILE_VERILOG">
@@ -321,27 +321,27 @@
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="328"/>
     </file>
     <file xil_pn:name="bus8_mux.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="3"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="13"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="encode8.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="2"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="8"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="enoutput8_sch.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="1"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="7"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="RAM_array.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="15"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="ROM_array.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="4"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="14"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="ROM_test.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="5"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
       <association xil_pn:name="PostMapSimulation" xil_pn:seqID="338"/>
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="338"/>
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="338"/>
@@ -353,16 +353,22 @@
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="351"/>
     </file>
     <file xil_pn:name="mem_bootstrap.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="350"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="20"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="mem_read.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="351"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="16"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="toy.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="366"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="21"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="366"/>
+    </file>
+    <file xil_pn:name="toy_processor_main_test.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="22"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="100"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="100"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="100"/>
     </file>
   </files>
 
@@ -594,8 +600,8 @@
     <property xil_pn:name="Run for Specified Time Translate" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Safe Implementation" xil_pn:value="No" xil_pn:valueState="default"/>
     <property xil_pn:name="Security" xil_pn:value="Enable Readback and Reconfiguration" xil_pn:valueState="default"/>
-    <property xil_pn:name="Selected Module Instance Name" xil_pn:value="/mem_read" xil_pn:valueState="non-default"/>
-    <property xil_pn:name="Selected Simulation Root Source Node Behavioral" xil_pn:value="work.mem_read" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Selected Module Instance Name" xil_pn:value="/toy_toy_sch_tb" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Selected Simulation Root Source Node Behavioral" xil_pn:value="work.toy_toy_sch_tb" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Selected Simulation Root Source Node Post-Map" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="Selected Simulation Root Source Node Post-Route" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="Selected Simulation Root Source Node Post-Translate" xil_pn:value="work.full_adder_full_adder_sch_tb" xil_pn:valueState="non-default"/>
@@ -611,7 +617,7 @@
     <property xil_pn:name="Slice Packing" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Slice Utilization Ratio" xil_pn:value="100" xil_pn:valueState="default"/>
     <property xil_pn:name="Specify 'define Macro Name and Value" xil_pn:value="" xil_pn:valueState="default"/>
-    <property xil_pn:name="Specify Top Level Instance Names Behavioral" xil_pn:value="work.mem_read" xil_pn:valueState="default"/>
+    <property xil_pn:name="Specify Top Level Instance Names Behavioral" xil_pn:value="work.toy_toy_sch_tb" xil_pn:valueState="default"/>
     <property xil_pn:name="Specify Top Level Instance Names Post-Map" xil_pn:value="Default" xil_pn:valueState="default"/>
     <property xil_pn:name="Specify Top Level Instance Names Post-Route" xil_pn:value="Default" xil_pn:valueState="default"/>
     <property xil_pn:name="Specify Top Level Instance Names Post-Translate" xil_pn:value="work.full_adder_full_adder_sch_tb" xil_pn:valueState="default"/>
@@ -619,7 +625,7 @@
     <property xil_pn:name="Starting Placer Cost Table (1-100) Map" xil_pn:value="1" xil_pn:valueState="default"/>
     <property xil_pn:name="Starting Placer Cost Table (1-100) Par" xil_pn:value="1" xil_pn:valueState="default"/>
     <property xil_pn:name="Synthesis Tool" xil_pn:value="XST (VHDL/Verilog)" xil_pn:valueState="default"/>
-    <property xil_pn:name="Target Board for Hardware Co-Simulation" xil_pn:value="Spartan-3E MicroBlaze Development Kit (JTAG)" xil_pn:valueState="default"/>
+    <property xil_pn:name="Target Board for Hardware Co-Simulation" xil_pn:value="N/A" xil_pn:valueState="default"/>
     <property xil_pn:name="Target Simulator" xil_pn:value="Please Specify" xil_pn:valueState="default"/>
     <property xil_pn:name="Target UCF File Name" xil_pn:value="main_lab2_iface.ucf" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Timing Mode Map" xil_pn:value="Non Timing Driven" xil_pn:valueState="default"/>
@@ -662,7 +668,7 @@
     <!--                                                                                  -->
     <!-- The following properties are for internal use only. These should not be modified.-->
     <!--                                                                                  -->
-    <property xil_pn:name="PROP_BehavioralSimTop" xil_pn:value="Module|ROM_test" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="PROP_BehavioralSimTop" xil_pn:value="Module|toy_toy_sch_tb" xil_pn:valueState="non-default"/>
     <property xil_pn:name="PROP_DesignName" xil_pn:value="ToyProcessor" xil_pn:valueState="non-default"/>
     <property xil_pn:name="PROP_DevFamilyPMName" xil_pn:value="spartan3e" xil_pn:valueState="default"/>
     <property xil_pn:name="PROP_FPGAConfiguration" xil_pn:value="FPGAConfiguration" xil_pn:valueState="default"/>
