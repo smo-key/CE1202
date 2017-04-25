@@ -20,10 +20,7 @@
         <signal name="RESET_CNT" />
         <signal name="WRITE_EN" />
         <signal name="MUXControl" />
-        <signal name="overflow_output">
-        </signal>
-        <signal name="XLXN_10" />
-        <signal name="XLXN_12" />
+        <signal name="overflow_output" />
         <signal name="OVERFLOW" />
         <port polarity="Input" name="ProcAddr(7:0)" />
         <port polarity="Input" name="ProcDR(7:0)" />
@@ -112,7 +109,7 @@
             <blockpin signalname="DATA(7:0)" name="DATA_OUT1(7:0)" />
             <blockpin signalname="WRITE_EN" name="WE" />
         </block>
-        <block symbolname="ROM_array" name="XLXI_2">
+        <block symbolname="ROM_array" name="ROMARRAY">
             <blockpin signalname="XLXN_2(7:0)" name="ADDR(7:0)" />
             <blockpin signalname="XLXN_1(7:0)" name="DATA_OUT(7:0)" />
         </block>
@@ -156,7 +153,7 @@
     <sheet sheetnum="1" width="3520" height="2720">
         <instance x="2272" y="1024" name="XLXI_1" orien="R0">
         </instance>
-        <instance x="1168" y="736" name="XLXI_2" orien="R0">
+        <instance x="1168" y="736" name="ROMARRAY" orien="R0">
         </instance>
         <instance x="1808" y="880" name="XLXI_4" orien="R0" />
         <instance x="1840" y="1120" name="XLXI_5" orien="R0" />
@@ -215,8 +212,8 @@
         </branch>
         <branch name="CLK">
             <wire x2="1072" y1="1264" y2="1264" x1="1040" />
-            <wire x2="1160" y1="1264" y2="1264" x1="1072" />
-            <wire x2="1200" y1="1264" y2="1264" x1="1160" />
+            <wire x2="1168" y1="1264" y2="1264" x1="1072" />
+            <wire x2="1200" y1="1264" y2="1264" x1="1168" />
             <wire x2="1072" y1="928" y2="1264" x1="1072" />
             <wire x2="2096" y1="928" y2="928" x1="1072" />
             <wire x2="2096" y1="864" y2="928" x1="2096" />
