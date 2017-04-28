@@ -7,12 +7,13 @@ module controller_controller_sch_tb();
 // Inputs
    reg CLK=0;
    reg CLR=0;
-   reg RESET=0;
+   reg RESET=1;
    reg ADD=0;
    reg SUB=0;
    reg ZERO=0;
    reg BZ=0;
    reg STORE=0;
+	reg OVERFLOW = 0;
 
 // Output
    wire S0;
@@ -78,14 +79,14 @@ module controller_controller_sch_tb();
    );
  initial begin
  // ------------- Current Time: 85ns
- #85;
- RESET = 1'b1;
  // -------------------------------------
  // ------------- Current Time: 285ns
  #200;
  RESET = 1'b0;
  // -------------------------------------
  // ------------- Current Time: 485ns
+ #200;
+ OVERFLOW = 1;
  #200;
  CLR = 1'b1;
  // -------------------------------------

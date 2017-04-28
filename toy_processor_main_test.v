@@ -34,8 +34,6 @@ module toy_toy_sch_tb();
 		.S4(S4),
 		.S5(S5)
    );
-
-	initial CLK = 0;
 	
 	always begin
 		if (S0 == 1) begin
